@@ -8,6 +8,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 
+// import Components
+import NavBar from "./components/NavBar"
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -32,15 +35,13 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="App">
+          <NavBar />
           <Routes>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route path="*" element={<NoMatch/>}/>
           </Routes>
           <header className="App-header">
-          <p>
-            Cap City Trotters
-          </p>
           </header>
         </div>
       </Router>
