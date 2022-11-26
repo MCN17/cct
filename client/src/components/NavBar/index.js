@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import { Link } from "react-router-dom"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -41,10 +42,11 @@ const NavBar = () => {
               'aria-labelledby': 'basic-button',
             }}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>The Team</MenuItem>
-            <MenuItem onClick={handleClose}>Cicruits</MenuItem>
-            <MenuItem onClick={handleClose}>Top Routes</MenuItem>
+            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">Home</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">Profile</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">The Team</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">Circuits</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">Top Routes</a></MenuItem>
           </Menu>
         
           <IconButton
@@ -64,8 +66,8 @@ const NavBar = () => {
           <Typography className="title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Cap City Trotters
           </Typography>
-          <Button color="inherit">Signup</Button>
-          <Button color="inherit">Login</Button>
+          <Button className="signup" color="inherit"><a href="/signup">Signup</a></Button>
+          <Button color="inherit"><a href="/login">Login</a></Button>
         </Toolbar>
       </AppBar>
     </Box>
