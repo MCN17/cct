@@ -64,7 +64,7 @@ const NavBar = () => {
           <MenuIcon />
           </IconButton>
           <Typography className="title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Cap City Trotters
+            
           </Typography>
           <Button className="signup" color="inherit"><a href="/signup">Signup</a></Button>
           <Button color="inherit"><a href="/login">Login</a></Button>
