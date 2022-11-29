@@ -1,6 +1,12 @@
 import React from "react";
 import cctlogo1 from "../assets/images/cctLogoLarge.jpg";
 
+//import material ui
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+
 // import css
 import "./homeStyle.css";
 
@@ -8,10 +14,20 @@ import "./homeStyle.css";
 const Home = () => {
 
     return (
-        <div className="main">
-            <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
-            <h1>Home</h1>
-        </div>
+       <Container maxWidth="xl">
+        <CssBaseline />
+        <Box sx={{ marginTop: 8, padding: 7, bgcolor: "#fafafa" }}>
+            <Grid container spacing={3}>
+                <Grid item xs={6} sx={{padding: 3, bgcolor: "#f5f5f5" }}>
+                <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
+                </Grid>
+                <Grid item xs={6}>
+                    <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
+                    We are always looking for new members so if you want to join you can take a look at some of our main routes and signup if you like what you see!</p>
+                </Grid>
+            </Grid>
+        </Box>
+       </Container>
     )
 }
 

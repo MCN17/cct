@@ -43,8 +43,6 @@ function App() {
             <Route path="/signup" element={<Signup/>}/>
             <Route path="*" element={<NoMatch/>}/>
           </Routes>
-          <header className="App-header">
-          </header>
         </div>
       </Router>
     </ApolloProvider>

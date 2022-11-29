@@ -22,7 +22,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright(props) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography variant="body2" color="white" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="/home">
         Cap City Trotters
@@ -83,6 +83,9 @@ const handleFormSubmit = async event => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            bgcolor:"#e0e0e0",
+            padding: 2,
+            borderRadius: "3%"
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: '#b71c1c' }}>
