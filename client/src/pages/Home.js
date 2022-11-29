@@ -16,9 +16,9 @@ const Home = () => {
     return (
        <Container maxWidth="xl">
         <CssBaseline />
-        <Box sx={{ marginTop: 8, padding: 7, bgcolor: "#fafafa" }}>
+        <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "1rem" }}>
             <Grid container spacing={3}>
-                <Grid item xs={6} sx={{padding: 3, bgcolor: "#f5f5f5" }}>
+                <Grid item xs={6} sx={{ }}>
                 <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
                 </Grid>
                 <Grid item xs={6}>
