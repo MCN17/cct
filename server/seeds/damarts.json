@@ -1,0 +1,156 @@
+[
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 17407.8,
+        "moving_time": 2813,
+        "elapsed_time": 2948,
+        "total_elevation_gain": 58.4,
+        "average_speed": 6.188,
+        "max_speed": 10.784,
+        "average_watts": 82.9,
+        "elev_high": 101.8,
+        "elev_low": 67.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 17380.5,
+        "moving_time": 2802,
+        "elapsed_time": 2946,
+        "total_elevation_gain": 58.6,
+        "average_speed": 6.203,
+        "max_speed": 11.5,
+        "average_watts": 85.6,
+        "elev_high": 101.8,
+        "elev_low": 67.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 17419.2,
+        "moving_time": 2854,
+        "elapsed_time": 3041,
+        "total_elevation_gain": 58.5,
+        "average_speed": 6.103,
+        "max_speed": 10.864,
+        "average_watts": 83.4,
+        "elev_high": 101.8,
+        "elev_low": 67.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 17456.3,
+        "moving_time": 2800,
+        "elapsed_time": 2918,
+        "total_elevation_gain": 58.5,
+        "average_speed": 6.234,
+        "max_speed": 12.44,
+        "average_watts": 86.1,
+        "elev_high": 101.8,
+        "elev_low": 67.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 17426.3,
+        "moving_time": 2757,
+        "elapsed_time": 2978,
+        "total_elevation_gain": 58.4,
+        "average_speed": 6.321,
+        "max_speed": 11.05,
+        "average_watts": 89.7,
+        "elev_high": 101.8,
+        "elev_low": 67.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Lunch Hike",
+        "distance": 10546.4,
+        "moving_time": 9565,
+        "elapsed_time": 11002,
+        "total_elevation_gain": 334.6,
+        "average_speed": 1.103,
+        "max_speed": 4.074,
+        "elev_high": 544.4,
+        "elev_low": 403.6
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Lunch Ride",
+        "distance": 18527.2,
+        "moving_time": 2901,
+        "elapsed_time": 3304,
+        "total_elevation_gain": 58.5,
+        "average_speed": 6.386,
+        "max_speed": 10.936,
+        "average_watts": 91.9,
+        "elev_high": 101.8,
+        "elev_low": 67.5
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Morning Ride",
+        "distance": 20080.4,
+        "moving_time": 3129,
+        "elapsed_time": 3556,
+        "total_elevation_gain": 69.2,
+        "average_speed": 6.418,
+        "max_speed": 12.362,
+        "average_watts": 94.0,
+        "elev_high": 101.8,
+        "elev_low": 67.5
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "id": 43769194,
+            "resource_state": 1
+        },
+        "name": "Afternoon Ride",
+        "distance": 16730.7,
+        "moving_time": 2676,
+        "elapsed_time": 2780,
+        "total_elevation_gain": 83.4,
+        "type": "Ride",
+        "sport_type": "Ride",
+        "average_speed": 6.252,
+        "max_speed": 10.754,
+        "average_watts": 89.9,
+        "elev_high": 115.4,
+        "elev_low": 67.5
+    }
+]
