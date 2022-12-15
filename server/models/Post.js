@@ -4,7 +4,7 @@ const dateFormat = require("../utils/dateFormat");
 
 const postSchema = new Schema(
     {
-        commentText: {
+        postText: {
             type: String, 
             required: "You need to post something!", 
             minlength: 1, 
@@ -32,6 +32,6 @@ postSchema.virtual("commentCount").get(function() {
     return this.comments.length;
 });
 
-const Thought = model("Thought", thoughtSchema);
+const Post = model("Post", postSchema);
 
-module.exports = Thought;
+module.exports = Post;
