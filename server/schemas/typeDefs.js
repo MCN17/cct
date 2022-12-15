@@ -20,6 +20,13 @@ const typeDefs = gql`
         comments: [Comment]
     }
 
+    type Comment {
+        _id: ID
+        commentBody: String
+        createdAt: String
+        username: String
+    }
+
     type Query {
         me: User
         users: [User]
@@ -32,6 +39,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         addPost(postText: String!): Post
+        addComment(postId: ID!, commentBody: String!): Post
     }
 
     type Auth {

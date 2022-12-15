@@ -75,7 +75,21 @@ users: async () => {
             }
 
             throw new AuthenticationError("You need to be logged in!");
-        }
+        }, 
+        addComment: async (parent, { postId, commentBody }, context) => {
+            if (context.user) {
+              const updatedPost = await Post.findOneAndUpdate(
+                { _id: thoughtId },
+                { $push: { comments: { commentBody, username: context.user.username } } },
+                { new: true, runValidators: true }
+              );
+      
+              return updatedPost;
+            }
+      
+            throw new AuthenticationError('You need to be logged in!');
+          },
+
        }
     }
 
