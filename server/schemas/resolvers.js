@@ -63,7 +63,7 @@ users: async () => {
         }, 
         addPost: async (parent, args, context) => {
             if (context.user) {
-                const thought = await Thought.create({ ...args, username: context.user.username });
+                const post = await Post.create({ ...args, username: context.user.username });
 
                 await User.findByIdAndUpdate(
                     { _id: context.user._id }, 
@@ -79,7 +79,7 @@ users: async () => {
         addComment: async (parent, { postId, commentBody }, context) => {
             if (context.user) {
               const updatedPost = await Post.findOneAndUpdate(
-                { _id: thoughtId },
+                { _id: postId },
                 { $push: { comments: { commentBody, username: context.user.username } } },
                 { new: true, runValidators: true }
               );

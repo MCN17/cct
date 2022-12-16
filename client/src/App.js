@@ -7,6 +7,7 @@ import { setContext } from '@apollo/client/link/context';
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Circuits from "./pages/Circuits";
 import NoMatch from "./pages/NoMatch";
 
 // import Components
@@ -41,6 +42,7 @@ function App() {
             <Route path="/home" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
+            <Route path="/circuits" element={<Circuits/>}/>
             <Route path="*" element={<NoMatch/>}/>
           </Routes>
         </div>
