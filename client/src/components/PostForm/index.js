@@ -33,11 +33,11 @@ const PostForm = () => {
       }
 
       // update post array's cache
-      // const { posts } = cache.readQuery({ query: QUERY_POSTS });
-      // cache.writeQuery({
-      //   query: QUERY_POSTS,
-      //   data: { posts: [addPost, ...posts] },
-      // });
+      const { posts } = cache.readQuery({ query: QUERY_POSTS });
+      cache.writeQuery({
+        query: QUERY_POSTS,
+        data: { posts: [addPost, ...posts] },
+      });
     }
   });
 
