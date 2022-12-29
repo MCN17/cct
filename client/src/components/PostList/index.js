@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
+
+//import material ui
+// import Box from '@mui/material/Box';
 import Grid from '@mui/material/Box';
 
 const PostList = ({ posts, title }) => {
@@ -21,7 +23,7 @@ const PostList = ({ posts, title }) => {
                 className="text-light"
               >
                 {post.username}
-              </Link>{' '}
+              </Link> {' '}
               post on {post.createdAt}
             </p>
             <div className="card-body">

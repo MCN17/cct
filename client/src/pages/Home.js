@@ -1,6 +1,13 @@
 import React from "react";
 import cctlogo1 from "../assets/images/cctLogoLarge.jpg";
 
+import { useQuery } from '@apollo/client';
+import PostList from '../components/PostList';
+import { QUERY_POSTS, QUERY_ME_BASIC } from '../utils/queries';
+import Auth from '../utils/auth';
+import FriendList from '../components/FriendList';
+import PostForm from '../components/PostForm';
+
 // import .env file
 // require('dotenv').config()
 
@@ -60,6 +67,16 @@ import "./homeStyle.css";
 
 const Home = () => {
 
+      // use useQuery hook to make query request
+  const { loading, data } = useQuery(QUERY_POSTS);
+
+  // use object destructuring to extract `data` from the `useQuery` Hook's response and rename it `userData` to be more descriptive
+  const { data: userData } = useQuery(QUERY_ME_BASIC);
+
+  const posts = data?.posts || [];
+  console.log(posts);
+
+  const loggedIn = Auth.loggedIn();
     
 
     return (
@@ -78,6 +95,7 @@ const Home = () => {
                 </Grid>
             </Grid>
         </Box>
+       
        </Container>
     )
 }

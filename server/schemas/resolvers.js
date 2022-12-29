@@ -10,6 +10,7 @@ me: async (parent, args, context) => {
         const userData = await User.findOne({ _id: context.user._id })
             .select("-__v -password")
             .populate("posts")
+            .populate("friends")
 
             return userData;
             }
@@ -20,12 +21,14 @@ me: async (parent, args, context) => {
 users: async () => {
     return User.find()
       .select("-__v -password")
+      .populate("friends")
       .populate("posts")
   },
   // get a user by username
   user: async (parent, { username }) => {
     return User.findOne({ username })
       .select("-__v -password")
+      .populate("friends")
       .populate("posts")
   },
   posts: async (parent, { username }) => {
@@ -89,6 +92,20 @@ users: async () => {
       
             throw new AuthenticationError('You need to be logged in!');
           },
+
+          addFriend: async (parent, { friendId }, context) => {
+            if (context.user) {
+              const updatedUser = await User.findOneAndUpdate(
+                { _id: context.user._id },
+                { $addToSet: { friends: friendId } },
+                { new: true }
+              ).populate("friends");
+          
+              return updatedUser;
+            }
+          
+            throw new AuthenticationError('You need to be logged in!');
+          }
 
        }
     }

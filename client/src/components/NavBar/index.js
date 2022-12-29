@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -42,11 +42,11 @@ const NavBar = () => {
               'aria-labelledby': 'basic-button',
             }}
           >
-            <MenuItem onClick={handleClose}><a href="/home" className="menu-links">Home</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/profile" className="menu-links">Profile</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/theteam" className="menu-links">The Team</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/circuits" className="menu-links">Circuits</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/toproutes" className="menu-links">Top Routes</a></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/home" className="menu-links">Home</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/profile" className="menu-links">Profile</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/theteam" className="menu-links">The Team</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/circuits" className="menu-links">Circuits</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/toproutes" className="menu-links">Top Routes</Link></MenuItem>
           </Menu>
         
           <IconButton
