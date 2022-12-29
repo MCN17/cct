@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import Post Form component
-import PostForm from '../components/PostForm';
+// import PostForm from '../components/PostForm';
 
 //import material ui
 import Container from '@mui/material/Container';
@@ -11,7 +11,6 @@ const Circuits = () => {
     return (
         <Container >
             <CssBaseline />
-            <PostForm />
         </Container>
     );
 };

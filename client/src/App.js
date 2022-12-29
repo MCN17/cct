@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Circuits from "./pages/Circuits";
 import NoMatch from "./pages/NoMatch";
+import Profile from "./pages/Profile";
 
 // import Components
 import NavBar from "./components/NavBar"
@@ -42,6 +43,7 @@ function App() {
             <Route path="/home" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
+            <Route path="/profile" element={<Profile/>}/>
             <Route path="/circuits" element={<Circuits/>}/>
             <Route path="*" element={<NoMatch/>}/>
           </Routes>

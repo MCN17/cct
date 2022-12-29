@@ -7,7 +7,7 @@ import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
 // import material ui
 // import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 // import CssBaseline from '@mui/material/CssBaseline';
@@ -23,6 +23,7 @@ const PostForm = () => {
       try {
         // update me array's cache
         const { me } = cache.readQuery({ query: QUERY_ME });
+        console.log(me);
         cache.writeQuery({
           query: QUERY_ME,
           data: { me: { ...me, posts: [...me.posts, addPost] } },
@@ -32,11 +33,11 @@ const PostForm = () => {
       }
 
       // update post array's cache
-      const { posts } = cache.readQuery({ query: QUERY_POSTS });
-      cache.writeQuery({
-        query: QUERY_POSTS,
-        data: { posts: [addPost, ...posts] },
-      });
+      // const { posts } = cache.readQuery({ query: QUERY_POSTS });
+      // cache.writeQuery({
+      //   query: QUERY_POSTS,
+      //   data: { posts: [addPost, ...posts] },
+      // });
     }
   });
 
@@ -66,8 +67,7 @@ const PostForm = () => {
   };
 
   return (
-    <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "1rem",  height: '100vh' }}>
-        <Grid container spacing={3}>
+    <Grid container spacing={3} sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "1rem",  height: '50vh' }}>
             <Grid item xs={5} sx={{ }}>
             <p
                 className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
@@ -97,7 +97,6 @@ const PostForm = () => {
            
             </Grid>
       </Grid>
-    </Box>
   );
 };
 
