@@ -4,7 +4,7 @@ import React from 'react';
 //import material ui
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
-// import Grid from '@mui/material/Grid'
+import Grid from '@mui/material/Grid'
 // import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
@@ -61,33 +61,38 @@ const Profile = (props) => {
   };
 
   return (
-    <Container>
-        <CssBaseline />
+    <Container maxWidth="xxl" sx={{ }}>
+      <CssBaseline>
+        <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
+          <Grid item xs={12} sx={{ml: 1 }}>
+            <h2>
+              Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+            </h2>
+            <FriendList
+              username={user.username}
+              friendCount={user.friendCount}
+              friends={user.friends}
+                />
+          </Grid>
+          <Grid item xs={4} sx={{}}>
               {!userParam && <PostForm />}
-          
-              <h2>
-                Viewing {userParam ? `${user.username}'s` : 'your'} profile.
-              </h2>
-
-              {userParam && (
-                <Button sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }} onClick={handleClick}>
-                  Add Friend
-                </Button>
-              )}
-
-            
+              </Grid>
+              <Grid item xs={8} sx={{}}>
                 <PostList
                   posts={user.posts}
                   title={`${user.username}'s posts...`}
                 />
+          </Grid>
 
-              <div className="col-12 col-lg-3 mb-3">
-                <FriendList
-                  username={user.username}
-                  friendCount={user.friendCount}
-                  friends={user.friends}
-                />
-              </div>
+          <Grid item xs={12}>
+            {userParam && (
+              <Button sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }} onClick={handleClick}>
+                Add Friend
+              </Button>
+              )}
+          </Grid>
+        </Grid>
+      </CssBaseline>
     </Container>
   );
 };
