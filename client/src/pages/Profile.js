@@ -64,7 +64,7 @@ const Profile = (props) => {
     <Container maxWidth="xxl" sx={{ }}>
       <CssBaseline>
         <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
-          <Grid item xs={12} sx={{ml: 1 }}>
+          <Grid item xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
             <h2>
               Viewing {userParam ? `${user.username}'s` : 'your'} profile.
             </h2>

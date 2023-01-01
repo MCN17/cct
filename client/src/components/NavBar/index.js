@@ -1,4 +1,7 @@
 import * as React from 'react';
+import Auth from "../../utils/auth"
+
+// import material ui components
 import { Link } from "react-router-dom"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -27,6 +30,11 @@ const NavBar = () => {
     const handleClose = () => {
       setAnchorEl(null);
     };
+
+    const logout = event => {
+      event.preventDefault();
+      Auth.logout();
+    }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -66,8 +74,20 @@ const NavBar = () => {
           <Typography className="title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
             
           </Typography>
-          <Button className="signup" color="inherit"><a href="/signup">Signup</a></Button>
-          <Button color="inherit"><a href="/login">Login</a></Button>
+
+
+          {Auth.loggedIn() ? ( 
+            <>
+              <Button className="signup" color="inherit"><a href="/profile">Profile</a></Button>
+              <Button className="signup" color="inherit"><a href="/home" onClick={logout}>Logout</a></Button>
+            </>
+          ) : (
+            <>
+              <Button className="signup" color="inherit"><a href="/signup">Signup</a></Button>
+              <Button color="inherit"><a href="/login">Login</a></Button>
+            </>
+          )}
+        
         </Toolbar>
       </AppBar>
     </Box>
