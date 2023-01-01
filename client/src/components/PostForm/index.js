@@ -67,8 +67,8 @@ const PostForm = () => {
   };
 
   return (
-    <Grid container spacing={3} sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "1rem",  height: '50vh' }}>
-            <Grid item xs={5} sx={{ }}>
+    <Grid container spacing={2} sx={{ marginTop: 10, padding: 1, bgcolor: "#eeeeee", borderRadius: "1rem",  height: '35vh' }}>
+            <Grid item xs={12} sx={{ }}>
             <p
                 className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
             >

@@ -1,0 +1,18 @@
+h3 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.card-header {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.post-text {
+    color: black;
+}
+
+.comment-link {
+    color: black;
+}

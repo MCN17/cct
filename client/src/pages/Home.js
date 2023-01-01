@@ -91,7 +91,7 @@ const Home = () => {
                 <Grid item xs={6}>
                     <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
                     We are always looking for new members so if you want to join you can take a look at some of our main routes and signup if you like what you see!</p>
-                    <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a>
+                    {/* <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a> */}
                 </Grid>
             </Grid>
         </Box>
