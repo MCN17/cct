@@ -87,10 +87,11 @@ const PostForm = () => {
                 />
                  <Button 
                  type="submit"
+                 fullWidth
                  variant="contained"
                  sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
                 >
-                    Submit
+                    Post
                 </Button>
 
             </form>

@@ -8,10 +8,12 @@ import Grid from '@mui/material/Grid'
 // import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-
+// import css
+import "./homeStyle.css";
 
 import { Navigate, useParams } from 'react-router-dom';
 
+// Import components
 import PostForm from '../components/PostForm';
 import PostList from '../components/PostList';
 import FriendList from '../components/FriendList';
@@ -65,7 +67,7 @@ const Profile = (props) => {
       <CssBaseline>
         <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
           <Grid item xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
-            <h2>
+            <h2 className="profile-view">
               Viewing {userParam ? `${user.username}'s` : 'your'} profile.
             </h2>
             <FriendList
