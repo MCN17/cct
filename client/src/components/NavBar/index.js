@@ -12,6 +12,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import cctlogo from "../../assets/images/cctlogo.png";
 // {/* <img className="logo" src={cctlogo} alt="outline of horse with parliament buildings in background"></img> */}
 

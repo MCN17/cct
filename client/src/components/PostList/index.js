@@ -20,17 +20,17 @@ const PostList = ({ posts, title }) => {
         posts.map(post => (
           <Grid item key={post._id} sx={{ bgcolor: "#eeeeee", margin: 4, padding: 1, borderRadius: "1rem"}}>
             <p className="card-header">
-              <Link
+              <Link className="username"
                 to={`/profile/${post.username}`}
               >
                 {post.username}
               </Link> {' '}
-              post on {post.createdAt}
+              posted on {post.createdAt}
             </p>
             <div className="card-body">
               <Link to={`/thought/${post._id}`}>
                 <p className="post-text">{post.postText}</p>
-                <p className="comment-link mb-0">
+                <p className="comment-link">
                   Comments: {post.commentCount} || Click to{' '}
                   {post.commentCount ? 'see' : 'start'} the discussion!
                 </p>
