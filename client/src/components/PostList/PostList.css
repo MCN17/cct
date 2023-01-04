@@ -16,11 +16,56 @@ h3 {
 
 .comment-link {
     color: black;
+    margin: 0px;
 }
+
 
 .username {
     color: black;
     font-size: 1.2rem;
-    font-style:normal;
-    
+    font-style:normal;   
 }
+
+
+.cardContentTop {
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.cardContentBottom {
+    border-top: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.cardContentBottom p {
+    color: black;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.comment-icon {
+    color: black;
+    font-size: 1.5rem;
+    padding-top: 0.5rem
+}
+
+.comment-count {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.MuiCardContent-root:last-child {
+    padding-bottom : 0 !important;
+ }
+
+ /* .MuiCardContent-root {
+    padding : 0 !important;
+ } */
+
