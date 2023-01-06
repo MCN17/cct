@@ -6,7 +6,7 @@ import PostList from '../components/PostList';
 import { QUERY_POSTS, QUERY_ME_BASIC } from '../utils/queries';
 import Auth from '../utils/auth';
 import FriendList from '../components/FriendList';
-import PostForm from '../components/PostForm';
+// import PostForm from '../components/PostForm';
 
 // import .env file
 // require('dotenv').config()
@@ -112,11 +112,11 @@ const Home = () => {
       
         {loggedIn && userData ? (
           <div>
-            <FriendList
+            {/* <FriendList
               username={userData.me.username}
               friendCount={userData.me.friendCount}
               friends={userData.me.friends}
-      />
+      /> */}
       </div>
   ) : null}
     </div>

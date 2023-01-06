@@ -60,8 +60,8 @@ const CommentForm = ({ postId }) => {
   >
       <TextField
       fullWidth
-      placeholder="Here's a new post..."
-      value={postText}
+      placeholder="Leave a comment..."
+      value={commentBody}
       onChange={handleChange}
 
       />
