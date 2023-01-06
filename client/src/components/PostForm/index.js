@@ -10,6 +10,10 @@ import Grid from '@mui/material/Grid';
 // import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CssBaseline from '@mui/material/CssBaseline';
 // import CssBaseline from '@mui/material/CssBaseline';
 
 const PostForm = () => {
@@ -67,8 +71,10 @@ const PostForm = () => {
   };
 
   return (
-    <Grid container spacing={2} sx={{ marginTop: 10, padding: 1, bgcolor: "#eeeeee", borderRadius: "1rem",  height: '35vh' }}>
-            <Grid item xs={12} sx={{ }}>
+            <Grid container>
+            
+              <Card sx={{width: "40rem"}}>
+                <CardContent>
             <p
                 className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
             >
@@ -95,9 +101,10 @@ const PostForm = () => {
                 </Button>
 
             </form>
-           
+            </CardContent>
+            </Card>
             </Grid>
-      </Grid>
+           
   );
 };
 
