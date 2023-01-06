@@ -45,39 +45,36 @@ const CommentForm = ({ postId }) => {
   };
 
   return (
-    <Grid container>
-            
-    <Card sx={{width: "40rem"}}>
-      <CardContent>
-  <p
-      className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
-  >
-      Character Count: {characterCount}/280
-      {error && <span className="ml-2">Something went wrong...</span>}
-  </p>
-  <form
-      onSubmit={handleFormSubmit}
-  >
-      <TextField
-      fullWidth
-      placeholder="Leave a comment..."
-      value={commentBody}
-      onChange={handleChange}
+    <Grid container className="collapsedSection-commentForm">   
+        <Card sx={{width: "40rem"}}>
+        <CardContent>
+            <p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
+    
+            {/* Character Count: {characterCount}/280
+            {error && <span className="ml-2">Something went wrong...</span>} */}
+            </p>
+            <form
+                onSubmit={handleFormSubmit}>
+    
+                <TextField
+                    fullWidth
+                    placeholder="Leave a comment..."
+                    value={commentBody}
+                    onChange={handleChange}
+                />
+                <Button 
+                    type="submit"
+                    fullWidth
+                    variant="contained"
+                    sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
+                >
+                    Comment
+                </Button>
 
-      />
-       <Button 
-       type="submit"
-       fullWidth
-       variant="contained"
-       sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
-      >
-          Post
-      </Button>
-
-  </form>
-  </CardContent>
-  </Card>
-  </Grid>
+            </form>
+        </CardContent>
+        </Card>
+    </Grid>
   );
 };
 

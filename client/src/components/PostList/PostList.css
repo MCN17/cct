@@ -48,6 +48,7 @@ h3 {
     margin: 0px;
 }
 
+
 .comment-icon {
     color: black;
     font-size: 1.5rem;
@@ -75,4 +76,10 @@ h3 {
 
  .post-list {
     margin-top: 0.5rem !important;
+ }
+
+
+ .collapsedSection-commentForm {
+    display: flex;
+    justify-content: center;
  }
