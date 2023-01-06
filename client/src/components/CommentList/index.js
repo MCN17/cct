@@ -21,7 +21,7 @@ const CommentList = ({ comments }) => {
       comments.map(comment => (
         <p className="pill mb-3" key={comment._id}>
           {comment.commentBody} {'// '}
-          <Link to={`/profile/${reaction.username}`}>
+          <Link to={`/profile/${comment.username}`}>
             {comment.username} on {comment.createdAt}
           </Link>
         </p>

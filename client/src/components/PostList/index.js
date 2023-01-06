@@ -16,6 +16,7 @@ import IconButton from '@mui/material/IconButton';
 import { FaRegComment } from "react-icons/fa";
 
 import CommentForm from '../../components/CommentForm';
+import CommentList from '../../components/CommentList';
 
 // import PostList css
 import "./PostList.css"
@@ -77,6 +78,7 @@ const PostList = ({ posts, title }) => {
                 </CardContent>
                 <Collapse className="collapsed-section" in={expanded === _id} timeout="auto" unmountOnExit>
                   <CommentForm/>
+                  <CommentList/>
                 </Collapse>
           </Card>
         ))}
