@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 //import material ui
 // import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
+// import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -15,25 +15,25 @@ import IconButton from '@mui/material/IconButton';
 //import Font Awesome icons
 import { FaRegComment } from "react-icons/fa";
 
-import CommentForm from '../../components/CommentForm';
-import CommentList from '../../components/CommentList';
+// import CommentForm from '../../components/CommentForm';
+// import CommentList from '../../components/CommentList';
 
 // import PostList css
 import "./PostList.css"
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
+// const ExpandMore = styled((props) => {
+//   const { expand, ...other } = props;
+//   return <IconButton {...other} />;
+// })(({ theme, expand }) => ({
+//   marginLeft: 'auto',
+//   transition: theme.transitions.create('transform', {
+//     duration: theme.transitions.duration.shortest,
+//   }),
+// }));
 
 const PostList = ({ posts, title }) => {
 
-  const [expanded, setExpanded] = React.useState(-1);
+  // const [expanded, setExpanded] = React.useState(-1);
 
  
 
@@ -55,31 +55,32 @@ const PostList = ({ posts, title }) => {
                 to={`/profile/${post.username}`}
               >
                 {post.username}
-              </Link> {' '}
+              </Link>
               posted on {post.createdAt}
             </p>
             <p className="comment-count">{post.commentCount} Comments</p>
             </CardContent>
             <CardContent className="cardContent">
-                <p className="post-text">{post.postText}</p>
-                </CardContent>
+              <p className="post-text">{post.postText}</p>
+            </CardContent>
                 
                 <CardContent className="cardContentBottom" sx={{ padding: 0 }}>
-                <ExpandMore
+                {/* <ExpandMore
                   expand={expanded}
                   onClick={() => setExpanded(expanded === _id ? -1 : _id)}
                   aria-expanded={expanded}
                   aria-label="show more"
-                >
-                
+                > */}
+                <Link
+                to={`/post/${post._id}`}>
                   <p className="comment-link"><FaRegComment className="comment-icon" /> Comment</p>
-             
-                </ExpandMore>
+                  </Link>
+                {/* </ExpandMore> */}
                 </CardContent>
-                <Collapse className="collapsed-section" in={expanded === _id} timeout="auto" unmountOnExit>
-                  <CommentForm/>
-                  <CommentList/>
-                </Collapse>
+                {/* <Collapse className="collapsed-section" in={expanded === _id} timeout="auto" unmountOnExit> */}
+                  {/* <CommentForm/>
+                  <CommentList/> */}
+                {/* </Collapse> */}
           </Card>
         ))}
         </Grid>

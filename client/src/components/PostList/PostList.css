@@ -83,3 +83,7 @@ h3 {
     display: flex;
     justify-content: center;
  }
+
+ .MuiCardContent-root {
+    padding: 0.2rem !important;
+ }

@@ -68,7 +68,7 @@ mutation addPost($postText: String!) {
 `;
 
 export const ADD_COMMENT = gql`
-  mutation addComment($commentId: ID!, $commentBody: String!) {
+  mutation addComment($postId: ID!, $commentBody: String!) {
     addComment(postId: $postId, commentBody: $commentBody) {
       _id
       commentCount

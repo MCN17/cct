@@ -10,6 +10,7 @@ import Signup from "./pages/Signup";
 import Circuits from "./pages/Circuits";
 import NoMatch from "./pages/NoMatch";
 import Profile from "./pages/Profile";
+import SinglePost from "./pages/SinglePost";
 
 // import Components
 import NavBar from "./components/NavBar"
@@ -48,6 +49,10 @@ function App() {
               <Route path=":username" element={<Profile />} />
               <Route path="" element={<Profile />} />
             </Route>
+            <Route 
+              path="/post/:id"
+              element={<SinglePost />}
+            />
 
             <Route path="/circuits" element={<Circuits/>}/>
             <Route path="*" element={<NoMatch/>}/>

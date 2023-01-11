@@ -10,25 +10,31 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 // import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-// import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
+
+// import CommentList css
+import "./CommentList.css"
 
 const CommentList = ({ comments }) => {
   return (
-
-    <Card>
-  <CardContent>
+<Grid>
+<CssBaseline/>  
     {comments &&
       comments.map(comment => (
-        <p className="pill mb-3" key={comment._id}>
-          {comment.commentBody} {'// '}
-          <Link to={`/profile/${comment.username}`}>
-            {comment.username} on {comment.createdAt}
-          </Link>
-        </p>
+        <Card sx={{mb: 2}}>
+          <CardContent>
+            <p>
+            <Link className="username" to={`/profile/${comment.username}`}>
+              {comment.username} on {comment.createdAt}
+            </Link>
+          </p>
+          <p key={comment._id}>
+            {comment.commentBody} 
+          </p>
+        </CardContent>
+      </Card>
       ))}
-  </CardContent>
-</Card>
-
+     </Grid>
   );
 };
 

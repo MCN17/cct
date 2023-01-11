@@ -65,7 +65,7 @@ db.once('open', async () => {
 
     await Post.updateOne(
       { _id: postId },
-      { $push: { reactions: { commentBody, username } } },
+      { $push: { comments: { commentBody, username } } },
       { runValidators: true }
     );
   }
