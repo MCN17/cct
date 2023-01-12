@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Circuits from "./pages/Circuits";
+import Team from "./pages/Team";
 import NoMatch from "./pages/NoMatch";
 import Profile from "./pages/Profile";
 import SinglePost from "./pages/SinglePost";
@@ -45,6 +46,7 @@ function App() {
             <Route path="/home" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
+            <Route path="/team" element={<Team/>}/>
             <Route path="/profile">
               <Route path=":username" element={<Profile />} />
               <Route path="" element={<Profile />} />

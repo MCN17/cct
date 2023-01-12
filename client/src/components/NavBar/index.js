@@ -53,9 +53,8 @@ const NavBar = () => {
           >
             <MenuItem onClick={handleClose}><Link to="/home" className="menu-links">Home</Link></MenuItem>
             <MenuItem onClick={handleClose}><Link to="/profile" className="menu-links">Profile</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/theteam" className="menu-links">The Team</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/team" className="menu-links">The Team</Link></MenuItem>
             <MenuItem onClick={handleClose}><Link to="/circuits" className="menu-links">Circuits</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/toproutes" className="menu-links">Top Routes</Link></MenuItem>
           </Menu>
         
           <IconButton
