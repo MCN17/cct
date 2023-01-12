@@ -1,3 +1,8 @@
 .makeFriends-alert {
     color: white;
 }
+
+h5 {
+    margin-top: 0 !important;
+    color: white;
+}

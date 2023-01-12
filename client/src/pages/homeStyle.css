@@ -18,5 +18,10 @@ p {
 
 .profile-view {
     color: white;
+    margin-bottom: 0 !important;
+}
+
+.page-title {
+    color: white;
 }
 

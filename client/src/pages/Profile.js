@@ -68,7 +68,7 @@ const Profile = (props) => {
         <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
           <Grid item xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
             <h2 className="profile-view">
-              Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+              {user.username}
             </h2>
             <FriendList
               username={user.username}

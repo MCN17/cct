@@ -12,14 +12,14 @@ import Button from '@mui/material/Button';
 // import CssBaseline from '@mui/material/CssBaseline';
 
 const FriendList = ({ friendCount, username, friends }) => {
-  if (!friends || !friends.length) {
-    return <p className="makeFriends-alert">{username}, make some friends!</p>;
-  }
+  // if (!friends || !friends.length) {
+  //   return <p className="makeFriends-alert">{username}, make some friends!</p>;
+  // }
 
   return (
     <Grid>
       <h5>
-        {username}'s {friendCount} {friendCount === 1 ? 'friend' : 'friends'}
+        {friendCount} {friendCount === 1 ? 'friend' : 'friends'}
       </h5>
       {friends.map(friend => (
         <Button className="btn w-100 display-block mb-2" key={friend._id}>
