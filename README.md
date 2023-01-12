@@ -7,6 +7,9 @@ able to add friends and comment on each other's posts.
 ## Website
 https://damp-reef-37984.herokuapp.com/
 
+![image](https://user-images.githubusercontent.com/104735194/212155902-1f815f79-532d-4a96-a2b6-12e5fcaa3959.png)
+
+
 ## Build With
 * JavaScript
 * React
