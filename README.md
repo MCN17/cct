@@ -4,12 +4,6 @@
 Cap City Trotters is a social media web appllication where members of the bike group can post about previous or upcoming rides. Members of Cap City Trotters are also
 able to add friends and comment on each other's posts.
 
-## Website
-https://damp-reef-37984.herokuapp.com/
-
-![image](https://user-images.githubusercontent.com/104735194/212155902-1f815f79-532d-4a96-a2b6-12e5fcaa3959.png)
-
-
 ## Build With
 * JavaScript
 * React
@@ -19,6 +13,11 @@ https://damp-reef-37984.herokuapp.com/
 * HTML5
 * CSS
 * Material UI
+
+## Website
+https://damp-reef-37984.herokuapp.com/
+
+![image](https://user-images.githubusercontent.com/104735194/212155902-1f815f79-532d-4a96-a2b6-12e5fcaa3959.png)
 
 ## Credits
 This application was built by Marty Nolan.
