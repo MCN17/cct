@@ -80,48 +80,50 @@ const Home = () => {
     
 
     return (
-       <Container maxWidth="xl">
+      <Container className="container" maxWidth="xl">
        
         <CssBaseline />
-        <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "1rem" }}>
-            <Grid container spacing={3}>
-                <Grid item xs={6} sx={{ }}>
+          {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
+            <Grid className="homeContainer" container spacing={1}>
+              <Grid className="topGrid">
+                <Grid className="imageContainer" item xs={4} sx={{ }}>
                 <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid className="introContainer" item xs={12}>
                     <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
                     We are always looking for new members so if you want to join you can take a look at some of our main routes and signup if you like what you see!</p>
                     {/* <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a> */}
                 </Grid>
+              </Grid>
+            
+            <Grid >
+              <Grid className="postList-grid">
+                {/* {loggedIn && (
+                  <div className="col-12 mb-3">
+                    <PostForm />
+                  </div>
+                )} */}
+              <Grid item xs={6} sx={{ bgcolor: ""}} className={`${loggedIn && ''}`}>
+                  {loading ? (
+                    <div>Loading...</div>
+                  ) : (
+                    <PostList posts={posts} title="Recent Posts" />
+                  )}
+              </Grid>
+                  {loggedIn && userData ? (
+              <Grid>
+                  {/* <FriendList
+                  username={userData.me.username}
+                  friendCount={userData.me.friendCount}
+                  friends={userData.me.friends}
+                  /> */}
+              </Grid>
+                ) : null}
+              </Grid>
             </Grid>
-        </Box>
-        <main>
-    <div className="flex-row justify-space-between">
-    {/* {loggedIn && (
-      <div className="col-12 mb-3">
-        <PostForm />
-      </div>
-    )} */}
-    <div className={`${loggedIn && ''}`}>
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          <PostList posts={posts} title="Recent Posts" />
-        )}
-      </div>
-      
-        {loggedIn && userData ? (
-          <div>
-            {/* <FriendList
-              username={userData.me.username}
-              friendCount={userData.me.friendCount}
-              friends={userData.me.friends}
-      /> */}
-      </div>
-  ) : null}
-    </div>
-  </main>
-       </Container>
+          {/* </Box> */}
+          </Grid>
+      </Container>
     )
 }
 

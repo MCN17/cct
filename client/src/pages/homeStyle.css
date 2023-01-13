@@ -1,10 +1,11 @@
+
 .cctLogoLarge {
 
     max-width: 100%;
     max-height: auto;
-    padding: 0;
-    margin: 0;
-    border-radius: 1rem;
+    padding: 2rem !important;
+    margin: 1rem !important;
+    border-radius: 0.3rem;
 }
 
 p {
@@ -23,5 +24,49 @@ p {
 
 .page-title {
     color: white;
+}
+
+.postList-grid {
+    background-color:rgb(236,236,236);
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.postList-grid h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+
+.topGrid {
+    background-color: rgb(255,255,255);
+    margin-right: 0px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+    border-radius: 0.2rem;
+}
+
+.introContainer {
+    display: flex;
+    align-items: center;
+}
+
+.introContainer p {
+    background-color: rgb(255,255,255);
+    font-size: 1vw;
+}
+
+.MuiBox-root {
+    background-color: rgb(255,255,255);
+    border-radius: 0.2rem;
+    margin: 1rem;
+}
+
+.homeContainer {
+    background-color: rgb(236,236,236)
 }
 

@@ -79,7 +79,7 @@ const Profile = (props) => {
           <Grid item xs={4} sx={{}}>
               {!userParam && <PostForm />}
               </Grid>
-              <Grid item xs={8} sx={{}}>
+              <Grid item xs={6} sx={{}}>
                 <PostList
                   posts={user.posts}
                   title={`${user.username}'s posts...`}

@@ -45,18 +45,19 @@ const PostList = ({ posts, title }) => {
   return (
       <Grid>
         <CssBaseline />
-      {/* <h3>{title}</h3> */}
+        <h2>Recent Posts</h2>
       {posts &&
         posts.map((post, _id) => (
-          <Card className="post-list" item key={post._id} sx={{ bgcolor: "#eeeeee", margin: 4, padding: 0.5, borderRadius: "0.3rem"}}>
+          <Card className="post-list" item key={post._id} sx={{ bgcolor: "rgb(255,255,255)", margin: 4, padding: 0.5, borderRadius: "0.3rem"}}>
             <CardContent className="cardContentTop">
             <p className="card-header">
               <Link className="username"
                 to={`/profile/${post.username}`}
               >
-                {post.username}
-              </Link>
-              posted on {post.createdAt}
+                posted by{" "}
+                </Link>
+                {post.username}{" "}
+                on {post.createdAt}
             </p>
             <p className="comment-count">{post.commentCount} Comments</p>
             </CardContent>
