@@ -107,6 +107,13 @@ const Home = () => {
                     <PostList posts={posts} title="Recent Posts" />
                   )}
               </Grid>
+              <Grid item className="listContainer">
+                  {loading ? (
+                    <div>Loading...</div>
+                  ) : (
+                    <PostList posts={posts} title="Recent Posts" />
+                  )}
+              </Grid>
                   {/* {loggedIn && userData ? (
               <Grid> */}
                   {/* <FriendList
