@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 // import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Box';
 import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CssBaseline from '@mui/material/CssBaseline';
-// import Collapse from '@mui/material/Collapse';
-// import IconButton from '@mui/material/IconButton';
-// import CardActions from '@mui/material/CardActions';
+import Collapse from '@mui/material/Collapse';
+import IconButton from '@mui/material/IconButton';
 
 //import Font Awesome icons
 import { FaRegComment } from "react-icons/fa";
@@ -43,7 +43,7 @@ const PostList = ({ posts, title }) => {
   
 
   return (
-      <Grid className="main">
+      <Grid>
         <CssBaseline />
         <h2>Recent Posts</h2>
       {posts &&

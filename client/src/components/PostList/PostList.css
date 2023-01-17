@@ -79,15 +79,15 @@ h3 {
  }
 
 
- /* .collapsedSection-commentForm {
+ .collapsedSection-commentForm {
     display: flex;
     justify-content: center;
- } */
+ }
 
  .MuiCardContent-root {
     padding: 0.2rem !important;
  }
 
- .main {
+ .MuiBox-root{
     width: 100%;
  }
