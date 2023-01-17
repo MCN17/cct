@@ -110,6 +110,13 @@ const Home = () => {
                     <PostList posts={posts} title="Recent Posts" />
                   )}
               </Grid>
+              <Grid item xs={6} sx={{ bgcolor: ""}} className={`${loggedIn && ''}`}>
+                  {loading ? (
+                    <div>Loading...</div>
+                  ) : (
+                    <PostList posts={posts} title="Recent Posts" />
+                  )}
+              </Grid>
                   {loggedIn && userData ? (
               <Grid>
                   {/* <FriendList
