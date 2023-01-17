@@ -100,7 +100,7 @@ const Home = () => {
                     <PostForm />
                   </div>
                 )} */}
-              <Grid item lg={6} xs={12} sx={{ bgcolor: ""}} className={`${loggedIn && ''}`}>
+              <Grid item className="listContainer">
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
