@@ -29,8 +29,8 @@ p {
 .postList-grid {
     background-color:rgb(236,236,236);
     border-radius: 0.2rem;
-    display: flex;
-    justify-content: flex-start;
+    display: flex !important;
+    justify-content: flex-start !important;
 }
 
 .postList-grid h2 {
@@ -60,13 +60,14 @@ p {
     font-size: 1vw;
 }
 
-.main {
+.recentPosts {
     background-color: rgb(255,255,255);
     border-radius: 0.2rem;
     margin: 1rem;
 }
 
 .homeContainer {
-    background-color: rgb(236,236,236)
+    background-color: rgb(236,236,236);
+    margin: 1rem !important;
 }
 
