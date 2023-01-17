@@ -60,7 +60,7 @@ p {
     font-size: 1vw;
 }
 
-.MuiBox-root {
+.main {
     background-color: rgb(255,255,255);
     border-radius: 0.2rem;
     margin: 1rem;

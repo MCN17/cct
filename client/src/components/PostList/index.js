@@ -43,7 +43,7 @@ const PostList = ({ posts, title }) => {
   
 
   return (
-      <Grid>
+      <Grid className="main">
         <CssBaseline />
         <h2>Recent Posts</h2>
       {posts &&
