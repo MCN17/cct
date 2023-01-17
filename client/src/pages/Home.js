@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 import PostList from '../components/PostList';
 import { QUERY_POSTS, QUERY_ME_BASIC } from '../utils/queries';
 import Auth from '../utils/auth';
-import FriendList from '../components/FriendList';
+// import FriendList from '../components/FriendList';
 // import PostForm from '../components/PostForm';
 
 // import .env file
@@ -14,7 +14,7 @@ import FriendList from '../components/FriendList';
 //import material ui
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import css
