@@ -87,3 +87,7 @@ h3 {
  .MuiCardContent-root {
     padding: 0.2rem !important;
  }
+
+ .main {
+    width: 100%;
+ }
