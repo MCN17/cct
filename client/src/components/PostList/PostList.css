@@ -62,27 +62,16 @@ h3 {
     padding: 0px;
 }
 
-.MuiCardContent-root:last-child {
-    padding-bottom : 0 !important;
- }
-
- /* .MuiCardContent-root {
-    padding : 0 !important;
- } */
-
- .MuiGrid-grid-xs-8 {
-    padding-top: 0 !important;
- }
 
  .post-list {
     margin-top: 0.5rem !important;
  }
 
 
- .collapsedSection-commentForm {
+ /* .collapsedSection-commentForm {
     display: flex;
     justify-content: center;
- }
+ } */
 
  .MuiCardContent-root {
     padding: 0.2rem !important;
