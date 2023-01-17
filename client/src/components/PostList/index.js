@@ -66,22 +66,14 @@ const PostList = ({ posts, title }) => {
             </CardContent>
                 
                 <CardContent className="cardContentBottom" sx={{ padding: 0 }}>
-                {/* <ExpandMore
-                  expand={expanded}
-                  onClick={() => setExpanded(expanded === _id ? -1 : _id)}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                > */}
+             
                 <Link
                 to={`/post/${post._id}`}>
                   <p className="comment-link"><FaRegComment className="comment-icon" /> Comment</p>
                   </Link>
-                {/* </ExpandMore> */}
+                
                 </CardContent>
-                {/* <Collapse className="collapsed-section" in={expanded === _id} timeout="auto" unmountOnExit> */}
-                  {/* <CommentForm/>
-                  <CommentList/> */}
-                {/* </Collapse> */}
+               
           </Card>
         ))}
         </Grid>

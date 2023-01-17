@@ -104,11 +104,9 @@ const Home = () => {
                   </div>
                 )} */}
               <Grid item xs={6} sx={{ bgcolor: ""}} className="recentPosts">
-                  {loading ? (
-                    <div>Loading...</div>
-                  ) : (
+                  
                     <PostList posts={posts}/>
-                  )}
+          
               </Grid>
                   {loggedIn && userData ? (
               <Grid>
