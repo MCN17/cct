@@ -83,7 +83,6 @@ const Home = () => {
       <Container className="container" maxWidth="xl">
        
         <CssBaseline />
-          {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
             <Grid className="homeContainer" container spacing={1}>
               <Grid className="topGrid">
                 <Grid className="imageContainer" item xs={4} sx={{ }}>
@@ -95,8 +94,6 @@ const Home = () => {
                     {/* <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a> */}
                 </Grid>
               </Grid>
-            
-            <Grid >
               <Grid className="postList-grid">
                 {/* {loggedIn && (
                   <div className="col-12 mb-3">
@@ -110,25 +107,16 @@ const Home = () => {
                     <PostList posts={posts} title="Recent Posts" />
                   )}
               </Grid>
-              <Grid item xs={6} sx={{ bgcolor: ""}} className={`${loggedIn && ''}`}>
-                  {loading ? (
-                    <div>Loading...</div>
-                  ) : (
-                    <PostList posts={posts} title="Recent Posts" />
-                  )}
-              </Grid>
-                  {loggedIn && userData ? (
-              <Grid>
+                  {/* {loggedIn && userData ? (
+              <Grid> */}
                   {/* <FriendList
                   username={userData.me.username}
                   friendCount={userData.me.friendCount}
                   friends={userData.me.friends}
                   /> */}
+              {/* </Grid> */}
+                {/* ) : null} */}
               </Grid>
-                ) : null}
-              </Grid>
-            </Grid>
-          {/* </Box> */}
           </Grid>
       </Container>
     )
