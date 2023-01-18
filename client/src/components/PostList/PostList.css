@@ -27,6 +27,7 @@
     margin: 0px;
     display:flex;
     justify-content: space-between;
+    width: auto;
 }
 
 .cardContentBottom {
@@ -73,5 +74,9 @@
 
  .MuiCardContent-root {
     padding: 0.2rem !important;
+ }
+
+ .css-bhp9pd-MuiPaper-root-MuiCard-root {
+    width: auto;
  }
 

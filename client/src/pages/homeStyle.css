@@ -64,6 +64,7 @@ p {
     background-color: rgb(255,255,255);
     border-radius: 0.2rem;
     margin: 1rem;
+    width: auto;
 }
 
 .homeContainer {
