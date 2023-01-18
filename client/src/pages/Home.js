@@ -104,21 +104,21 @@ const Home = () => {
                     <PostForm />
                   </div>
                 )} */}
-              <div className="recentPosts">
+              <Container className="recentPosts" maxWidth="fixed">
                 
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-              </div>
-              <div className="recentPosts">
+              </Container>
+              <Container className="recentPosts" maxWidth="fixed">
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-              </div>
+              </Container>
                   {loggedIn && userData ? (
               <div>
                   {/* <FriendList
