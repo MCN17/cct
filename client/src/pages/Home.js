@@ -113,6 +113,15 @@ const Home = () => {
                   )}
                   </Card>
               </div>
+              <div className="recentPosts">
+                <Card>
+                  {loading ? (
+                    <div>Loading...</div>
+                  ) : (
+                    <PostList posts={posts}/>
+                  )}
+                  </Card>
+              </div>
                   {loggedIn && userData ? (
               <div>
                   {/* <FriendList
