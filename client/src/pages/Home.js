@@ -13,9 +13,9 @@ import Auth from '../utils/auth';
 
 //import material ui
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
+// import Grid from '@mui/material/Grid';
+// import Box from '@mui/material/Box';
+// import Card from '@mui/material/Card';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import css
@@ -104,21 +104,21 @@ const Home = () => {
                     <PostForm />
                   </div>
                 )} */}
-              <Container className="recentPosts" maxWidth="fixed">
+              <div className="recentPosts">
                 
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-              </Container>
-              <Container className="recentPosts" maxWidth="fixed">
+              </div>
+              <div className="recentPosts">
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-              </Container>
+              </div>
                   {loggedIn && userData ? (
               <div>
                   {/* <FriendList
