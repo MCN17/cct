@@ -13,9 +13,10 @@ import Auth from '../utils/auth';
 
 //import material ui
 import Container from '@mui/material/Container';
-// import Grid from '@mui/material/Grid';
-// import Box from '@mui/material/Box';
-// import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import css
@@ -81,59 +82,71 @@ const Home = () => {
     
 
     return (
-      <div className="container">
-       
-        <CssBaseline />
-          {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
-            <div className="homeContainer">
-              <div className="topGrid">
-                <div className="imageContainer">
-                <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
-                </div>
-                <div className="introContainer">
-                    <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
-                    We are always looking for new members so if you want to join you can take a look at some of our main routes and signup if you like what you see!</p>
-                    {/* <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a> */}
-                </div>
-              </div>
-            
-            <div>
-              <Container className="postList-grid" maxWidth="fixed">
-                {/* {loggedIn && (
-                  <div className="col-12 mb-3">
-                    <PostForm />
-                  </div>
-                )} */}
-              <Container className="recentPosts" maxWidth="fixed">
-                
-                  {loading ? (
-                    <div>Loading...</div>
-                  ) : (
-                    <PostList posts={posts}/>
-                  )}
-              </Container>
-              <Container className="recentPosts" maxWidth="fixed">
-                  {loading ? (
-                    <div>Loading...</div>
-                  ) : (
-                    <PostList posts={posts}/>
-                  )}
-              </Container>
-                  {loggedIn && userData ? (
-              <div>
-                  {/* <FriendList
-                  username={userData.me.username}
-                  friendCount={userData.me.friendCount}
-                  friends={userData.me.friends}
-                  /> */}
-              </div>
-                ) : null}
-              </Container>
-            </div>
-          {/* </Box> */}
-          </div>
-      </div>
+        <Container component="main" maxWidth="fixed">
+          <Box sx={{  mt: 5 }}>
+            <Grid container  sx={{ justifyContent: "center"}}>
+              <Grid item xs={3}>
+                <Card>
+                  <CardMedia className="cctLogoLarge"
+                          sx={{ height: 300 }}
+                          image={cctlogo1}
+                          title="cctLogo"
+                      />
+                </Card>
+              </Grid>
+              <Grid item>
+              </Grid>
+            </Grid>
+          </Box>
+        </Container>
     )
 }
+
+
+{/* <div className="container">
+       
+<CssBaseline />
+  {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
+    // <div className="homeContainer">
+    //   <div className="topGrid">
+    //     <div className="imageContainer">
+    //     <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>
+    //     </div>
+    //     <div className="introContainer">
+            // <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
+            // We are always looking for new members so if you want to join you can take a look at some of our main routes and signup if you like what you see!</p>
+            {/* <a href="https://www.strava.com/oauth/authorize?client_id=97775&redirect_uri=http://localhost:3000/home&response_type=code&scope=read_all,activity:read_all">Test Connect to Strava</a> */}
+        {/* </div>
+      </div>
+    
+    <div>
+      <Container className="postList-grid" maxWidth="fixed"> */}
+        {/* {loggedIn && (
+          <div className="col-12 mb-3">
+            <PostForm />
+          </div>
+        )} */}
+      {/* <Container className="recentPosts" maxWidth="fixed">
+        
+          {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <PostList posts={posts}/>
+          )} */}
+      {/* </Container>
+          {loggedIn && userData ? (
+      <div> */}
+          {/* <FriendList
+          username={userData.me.username}
+          friendCount={userData.me.friendCount}
+          friends={userData.me.friends}
+          /> */}
+      {/* </div>
+        ) : null} */}
+      {/* </Container> */}
+    // </div>
+  {/* </Box> */}
+  {/* </div> */}
+// </div> */}
 
 export default Home;
