@@ -44,7 +44,7 @@ const PostList = ({ posts, title }) => {
   
 
   return (
-    <Container maxWidth="xl">
+    <Container className="main" maxWidth="xxl">
       <Box>
           <CssBaseline />
           <h2>Recent Posts</h2>

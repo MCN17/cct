@@ -32,7 +32,7 @@ p {
     display: flex !important;
     justify-content: center !important;
     margin: 0 !important;
-    padding: 0!important;
+    padding: 1rem !important;
     width: auto;
 
 }
@@ -66,7 +66,8 @@ p {
 .recentPosts {
     background-color: rgb(255,255,255);
     border-radius: 0.2rem;
-    margin: 1rem;
+    margin: 1rem !important;
+    padding: 0;
     width: auto;
 }
 

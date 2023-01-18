@@ -98,30 +98,27 @@ const Home = () => {
               </div>
             
             <div>
-              <div className="postList-grid">
+              <Container className="postList-grid" maxWidth="fixed">
                 {/* {loggedIn && (
                   <div className="col-12 mb-3">
                     <PostForm />
                   </div>
                 )} */}
-              <div className="recentPosts">
-                <Card>
+              <Container className="recentPosts" maxWidth="fixed">
+                
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-                  </Card>
-              </div>
-              <div className="recentPosts">
-                <Card>
+              </Container>
+              <Container className="recentPosts" maxWidth="fixed">
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
-                  </Card>
-              </div>
+              </Container>
                   {loggedIn && userData ? (
               <div>
                   {/* <FriendList
@@ -131,7 +128,7 @@ const Home = () => {
                   /> */}
               </div>
                 ) : null}
-              </div>
+              </Container>
             </div>
           {/* </Box> */}
           </div>
