@@ -85,7 +85,7 @@ const Home = () => {
        
         <CssBaseline />
           {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
-            <div className="homeContainer" container spacing={1}>
+            <div className="homeContainer">
               <div className="topGrid">
                 <div className="imageContainer">
                 <img className="cctLogoLarge" src={cctlogo1} alt="outline of horse with parliament buildings in background"></img>

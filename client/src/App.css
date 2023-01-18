@@ -1,14 +1,17 @@
 .App {
   background-color: #212121;
   min-height: 100vh;
+  width: auto;
 }
 
 html {
   height: 100%;
+  width: auto;
 }
 
 body {
   min-height: 100%;
+  width: auto;
 }
 
 

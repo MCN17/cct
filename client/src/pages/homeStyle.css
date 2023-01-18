@@ -31,6 +31,9 @@ p {
     border-radius: 0.2rem;
     display: flex !important;
     justify-content: center !important;
+    margin: 0 !important;
+    padding: 0!important;
+    width: auto;
 
 }
 
