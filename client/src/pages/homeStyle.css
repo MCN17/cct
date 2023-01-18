@@ -29,6 +29,8 @@ p {
 .postList-grid {
     background-color:rgb(236,236,236);
     border-radius: 0.2rem;
+    display: flex !important;
+    justify-content: flex-start !important;
 }
 
 .postList-grid h2 {

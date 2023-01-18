@@ -15,6 +15,7 @@ import Auth from '../utils/auth';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import css
@@ -104,11 +105,13 @@ const Home = () => {
                   </div>
                 )} */}
               <Grid item xs={6} sx={{ bgcolor: ""}} className="recentPosts">
+                <Card>
                   {loading ? (
                     <div>Loading...</div>
                   ) : (
                     <PostList posts={posts}/>
                   )}
+                  </Card>
               </Grid>
                   {loggedIn && userData ? (
               <Grid>
