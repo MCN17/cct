@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 import PostList from '../components/PostList';
 import { QUERY_POSTS, QUERY_ME_BASIC } from '../utils/queries';
 import Auth from '../utils/auth';
-import FriendList from '../components/FriendList';
+// import FriendList from '../components/FriendList';
 // import PostForm from '../components/PostForm';
 
 // import .env file
@@ -104,9 +104,11 @@ const Home = () => {
                   </div>
                 )} */}
               <Grid item xs={6} sx={{ bgcolor: ""}} className="recentPosts">
-                  
+                  {loading ? (
+                    <div>Loading...</div>
+                  ) : (
                     <PostList posts={posts}/>
-          
+                  )}
               </Grid>
                   {loggedIn && userData ? (
               <Grid>

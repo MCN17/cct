@@ -5,7 +5,8 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid'
-// import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 
 // import css
@@ -63,27 +64,34 @@ const Profile = (props) => {
   };
 
   return (
-    <Container maxWidth="xxl" sx={{ }}>
-      <CssBaseline>
+    <Container component="main" maxWidth="xl">
+      <CssBaseline/>
+        <Box>
         <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
           <Grid item xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
             <h2 className="profile-view">
               {user.username}
             </h2>
+            <h2>
             <FriendList
               username={user.username}
               friendCount={user.friendCount}
               friends={user.friends}
                 />
+                </h2>
           </Grid>
           <Grid item xs={4} sx={{}}>
+            <Card>
               {!userParam && <PostForm />}
-              </Grid>
-              <Grid item xs={6} sx={{}}>
-                <PostList
+              </Card>
+          </Grid>
+          <Grid item xs={6} sx={{}}>
+            <Card>
+                  <PostList
                   posts={user.posts}
                   title={`${user.username}'s posts...`}
                 />
+                </Card>
           </Grid>
 
           <Grid item xs={12}>
@@ -94,8 +102,8 @@ const Profile = (props) => {
               )}
           </Grid>
         </Grid>
-      </CssBaseline>
-    </Container>
+        </Box>
+        </Container>
   );
 };
 

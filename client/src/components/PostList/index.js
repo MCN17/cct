@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //import material ui
-// import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 // import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -43,7 +44,10 @@ const PostList = ({ posts, title }) => {
   
 
   return (
-      <Grid>
+    <Container>
+    <Box>
+      <Grid container>
+        <Grid item>
         <CssBaseline />
         <h2>Recent Posts</h2>
       {posts &&
@@ -77,6 +81,9 @@ const PostList = ({ posts, title }) => {
           </Card>
         ))}
         </Grid>
+      </Grid>
+      </Box>
+      </Container>
   );
 };
 
