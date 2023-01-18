@@ -44,44 +44,40 @@ const PostList = ({ posts, title }) => {
   
 
   return (
-    <Container>
-    <Box>
-      <Grid container>
-        <Grid item>
-        <CssBaseline />
-        <h2>Recent Posts</h2>
-      {posts &&
-        posts.map((post, _id) => (
-          <Card className="post-list" item key={post._id} sx={{ bgcolor: "rgb(255,255,255)", margin: 4, padding: 0.5, borderRadius: "0.3rem"}}>
-            <CardContent className="cardContentTop">
-            <p className="card-header">
-              <Link className="username"
-                to={`/profile/${post.username}`}
-              >
-                posted by{" "}
-                </Link>
-                {post.username}{" "}
-                on {post.createdAt}
-            </p>
-            <p className="comment-count">{post.commentCount} Comments</p>
-            </CardContent>
-            <CardContent className="cardContent">
-              <p className="post-text">{post.postText}</p>
-            </CardContent>
-                
-                <CardContent className="cardContentBottom" sx={{ padding: 0 }}>
-             
-                <Link
-                to={`/post/${post._id}`}>
-                  <p className="comment-link"><FaRegComment className="comment-icon" /> Comment</p>
+    <Container maxWidth="xl">
+      <Box>
+          <CssBaseline />
+          <h2>Recent Posts</h2>
+        {posts &&
+          posts.map((post, _id) => (
+            <Card className="post-list" key={post._id} sx={{ bgcolor: "rgb(255,255,255)", margin: 4, padding: 0.5, borderRadius: "0.3rem"}}>
+              <CardContent className="cardContentTop">
+              <p className="card-header">
+                <Link className="username"
+                  to={`/profile/${post.username}`}
+                >
+                  posted by{" "}
                   </Link>
+                  {post.username}{" "}
+                  on {post.createdAt}
+              </p>
+              <p className="comment-count">{post.commentCount} Comments</p>
+              </CardContent>
+              <CardContent className="cardContent">
+                <p className="post-text">{post.postText}</p>
+              </CardContent>
+                  
+                  <CardContent className="cardContentBottom" sx={{ padding: 0 }}>
+              
+                  <Link
+                  to={`/post/${post._id}`}>
+                    <p className="comment-link"><FaRegComment className="comment-icon" /> Comment</p>
+                    </Link>
+                  
+                  </CardContent>
                 
-                </CardContent>
-               
-          </Card>
-        ))}
-        </Grid>
-      </Grid>
+            </Card>
+          ))}
       </Box>
       </Container>
   );
