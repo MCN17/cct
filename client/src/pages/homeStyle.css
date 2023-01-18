@@ -30,7 +30,8 @@ p {
     background-color:rgb(236,236,236);
     border-radius: 0.2rem;
     display: flex !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
+
 }
 
 .postList-grid h2 {
@@ -42,7 +43,6 @@ p {
 .topGrid {
     background-color: rgb(255,255,255);
     margin-right: 0px;
-    width: 100%;
     padding: 0;
     display: flex;
     justify-content: flex-start;
@@ -68,6 +68,6 @@ p {
 
 .homeContainer {
     background-color: rgb(236,236,236);
-    margin: 1rem !important;
+    margin: 5rem !important;
 }
 

@@ -81,7 +81,7 @@ const Home = () => {
     
 
     return (
-      <Container className="container" maxWidth="xl">
+      <div className="container">
        
         <CssBaseline />
           {/* <Box sx={{ marginTop: 10, padding: 7, bgcolor: "#eeeeee", borderRadius: "0.3rem" }}> */}
@@ -113,15 +113,6 @@ const Home = () => {
                   )}
                   </Card>
               </div>
-              <div className="recentPosts">
-                <Card>
-                  {loading ? (
-                    <div>Loading...</div>
-                  ) : (
-                    <PostList posts={posts}/>
-                  )}
-                  </Card>
-              </div>
                   {loggedIn && userData ? (
               <div>
                   {/* <FriendList
@@ -135,7 +126,7 @@ const Home = () => {
             </div>
           {/* </Box> */}
           </div>
-      </Container>
+      </div>
     )
 }
 
