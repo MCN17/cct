@@ -84,7 +84,7 @@ const Home = () => {
     return (
         <Container className="main" component="main" maxWidth="fixed">
           <Box sx={{  mt: 1 }}>
-            <Grid container  sx={{ justifyContent: "center" }}>
+            <Grid className="topGrid-container" container  sx={{ justifyContent: "center" }}>
               <Grid item lg={2.2} xs={12}>
                 <Card>
                   <CardMedia className="cctLogoLarge"
@@ -98,7 +98,10 @@ const Home = () => {
               <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
                 We are always looking for new members so if you want to join you can take a look at our Circuits page and signup if you like what you see!</p>
               </Grid>
-              <Grid item>
+            </Grid>
+            <Grid className="middleGrid-container" container sx={{ justifyContent: "center"}}>
+              <Grid item xs={12} lg={6} sx={{ bgcolor: "white", margin: 5, borderRadius: "0.3rem" }}>
+                <PostList posts={posts}/>
               </Grid>
             </Grid>
           </Box>

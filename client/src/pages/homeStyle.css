@@ -6,9 +6,9 @@
     border-radius: 0.3rem;
 }
 
-p {
+.introParagraph p {
     font-family: "Roboto Mono", monospace;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -16,6 +16,11 @@ p {
     display: flex;
     align-items: center;
 }
+
+.middleGrid-container {
+    text-align: center;
+}
+
 
 .profile-view {
     color: white;
@@ -50,7 +55,7 @@ p {
         border-radius: 0.3rem;
     }
 
-    p {
+    .introParagraph p {
         font-family: "Roboto Mono", monospace;
         font-size: 1rem;
         color: white;
