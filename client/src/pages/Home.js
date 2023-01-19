@@ -1,5 +1,6 @@
 import React from "react";
 import cctlogo1 from "../assets/images/cctLogoLarge.jpg";
+import rustyBridge from "../assets/images/rustyBridge.jpg";
 
 import { useQuery } from '@apollo/client';
 import PostList from '../components/PostList';
@@ -100,8 +101,26 @@ const Home = () => {
               </Grid>
             </Grid>
             <Grid className="middleGrid-container" container sx={{ justifyContent: "center"}}>
+              <Grid item lg={2} xs={12} sx={{ mt: 5 }}>
+              <Card>
+                  <CardMedia className="rustyBridgePic"
+                          sx={{ height: 310 }}
+                          image={rustyBridge}
+                          title="rusty bridge"
+                      />
+                </Card>
+              </Grid>
               <Grid item xs={12} lg={6} sx={{ bgcolor: "white", margin: 5, borderRadius: "0.3rem" }}>
                 <PostList posts={posts}/>
+              </Grid>
+              <Grid item lg={2} xs={12} sx={{ mt: 5 }}>
+              <Card>
+                  <CardMedia className="rustyBridgePic"
+                          sx={{ height: 310 }}
+                          image={rustyBridge}
+                          title="rusty bridge"
+                      />
+                </Card>
               </Grid>
             </Grid>
           </Box>

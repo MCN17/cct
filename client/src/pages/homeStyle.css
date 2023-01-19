@@ -6,11 +6,17 @@
     border-radius: 0.3rem;
 }
 
+.rustyBridgePic {
+    max-width: auto;
+    max-height: auto;
+}
+
 .introParagraph p {
     font-family: "Roboto Mono", monospace;
     font-size: 1.3rem;
     color: white;
 }
+
 
 .introParagraph {
     display: flex;
@@ -41,6 +47,11 @@
     width: auto;
 
 }
+
+/* .main {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
 
 
 
