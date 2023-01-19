@@ -27,6 +27,7 @@
 
 .middleGrid-container {
     text-align: center;
+    height: fit-content;
 }
 
 .pictures {
