@@ -24,16 +24,16 @@ import CardContent from '@mui/material/CardContent';
 
 const Team = () => {
     return (
-        <Container maxWidth="xl">
+        <Container maxWidth="fixed">
             <CssBaseline />
             <Grid className="page-title">
                 <h1>The Team</h1>
             </Grid>
-            <Grid container spacing={1} sx={{margin: 1 }}>
-                <Grid item lg={4} xs={12} sx={{padding: 2 }}>
+            <Grid container spacing={1} sx={{margin: 1, justifyContent: "center" }}>
+                <Grid item lg={2} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 400 }}>
                     <CardMedia
-                        sx={{ height: 500 }}
+                        sx={{ height: 310 }}
                         image={Bruster}
                         title="Bruster"
                     />
@@ -47,10 +47,10 @@ const Team = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={4} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={2} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 400 }}>
                     <CardMedia
-                        sx={{ height: 500 }}
+                        sx={{ height: 310 }}
                         image={KMAC}
                         title="KMAC"
                     />
@@ -64,16 +64,16 @@ const Team = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={4} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={2} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 400 }}>
                     <CardMedia
-                        sx={{ height: 500 }}
+                        sx={{ height: 310 }}
                         image={Lynch}
                         title="Lynch"
                     />
                     <CardContent sx={{ height: 200 }}>
                         <Typography sx={{pt: 1 }} gutterBottom variant="h5" component="div">
-                        Lnych
+                        Lynch
                         </Typography>
                         <Typography sx={{padding: 1 }}variant="body2" color="text.secondary">
                             Refuses to wear a helmet and trots at night without a light. Enjoys going full speed into sharp turns.
@@ -81,10 +81,10 @@ const Team = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={6} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={2} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 400 }}>
                     <CardMedia
-                        sx={{ height: 500 }}
+                        sx={{ height: 310 }}
                         image={Damarts}
                         title="Damarts"
                     />

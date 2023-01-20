@@ -24,16 +24,16 @@ import CardContent from '@mui/material/CardContent';
 
 const Circuits = () => {
     return (
-        <Container maxWidth="xl">
+        <Container maxWidth="fixed">
             <CssBaseline />
             <Grid className="page-title">
                 <h1>Circuits</h1>
             </Grid>
             <Grid container spacing={1} sx={{margin: 1 }}>
-                <Grid item lg={6} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={3} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 600 }}>
                     <CardMedia
-                        sx={{ height: 400 }}
+                        sx={{ height: 350 }}
                         image={lordsEye}
                         title="Lord's Eye"
                     />
@@ -48,10 +48,10 @@ const Circuits = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={6} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={3} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 600 }}>
                     <CardMedia
-                        sx={{ height: 400 }}
+                        sx={{ height: 350 }}
                         image={endoz}
                         title="Endoz"
                     />
@@ -67,10 +67,10 @@ const Circuits = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={6} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={3} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 600 }}>
                     <CardMedia
-                        sx={{ height: 400 }}
+                        sx={{ height: 350 }}
                         image={kennysLoop}
                         title="Kenny's Loop"
                     />
@@ -85,10 +85,10 @@ const Circuits = () => {
                     </CardContent>
                 </Card>
                 </Grid>
-                <Grid item lg={6} xs={12} sx={{padding: 2 }}>
+                <Grid item lg={3} xs={12} sx={{padding: 2 }}>
                 <Card sx={{ maxWidth: 600 }}>
                     <CardMedia
-                        sx={{ height: 400 }}
+                        sx={{ height: 350 }}
                         image={champlainLookout}
                         title="Champlain Lookout"
                     />

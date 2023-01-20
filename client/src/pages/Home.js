@@ -10,6 +10,7 @@ import pinkLake from "../assets/images/pinkLake.jpg";
 import ruinsWave from "../assets/images/ruinsWave.jpg";
 import ruinsWave1 from "../assets/images/ruinsWave1.jpg";
 import rustyBridge1 from "../assets/images/rustyBridge1.jpg";
+import champlainLookout from "../assets/images/champlainLookout.jpg";
 
 import { useQuery } from '@apollo/client';
 import PostList from '../components/PostList';
@@ -28,6 +29,7 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import css
@@ -111,6 +113,22 @@ const Home = () => {
               </Grid>
             </Grid>
             <Grid className="middleGrid-container" container sx={{ justifyContent: "center"}}>
+              <Grid className="pictures" item lg={3} xs={12} sx={{ mt: 5 }}>
+                    <Card>
+                      <CardContent sx={{ margin: 2, fontWeight: "bold", fontSize: 20 }}>
+                         Membership Notice
+                      </CardContent>
+                      <CardMedia className="champlainLookoutHome"
+                              sx={{ height: 310 }}
+                              image={champlainLookout}
+                              title="Champlain Lookout"
+                          />
+                      <CardContent sx={{ margin: 2 }}>
+                        Champlain Lookout must be completed in order to join the CCT! Existing members must also complete this circtuit
+                        at least twice per year inorder to retain their CCT membership. Please visit the circuits page for more information on this circuit.
+                      </CardContent>
+                    </Card>
+              </Grid>
               <Grid item xs={12} lg={6} sx={{ bgcolor: "white", margin: 5, borderRadius: "0.3rem" }}>
                 <PostList posts={posts}/>
               </Grid>

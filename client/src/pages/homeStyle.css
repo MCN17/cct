@@ -25,13 +25,16 @@
     align-items: center;
 }
 
+/* fit-content isnt supported by sarfari and some other browsers so I need to figure something out for that! */
 .middleGrid-container {
     text-align: center;
     height: fit-content;
 }
 
+
+/* fit-content isnt supported by sarfari and some other browsers so I need to figure something out for that! */
 .pictures {
-   height: fit-content;
+   height: fit-content; 
 }
 
 
