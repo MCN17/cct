@@ -71,38 +71,37 @@ const PostForm = () => {
   };
 
   return (
-            <Grid container>
-            
-              <Card sx={{width: "40rem"}}>
+            <Grid container sx={{ mb: 2 }}>
+              <Card sx={{width: "50rem"}}>
                 <CardContent>
-            <p
-                className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
-            >
-                Character Count: {characterCount}/280
-                {error && <span className="ml-2">Something went wrong...</span>}
-            </p>
-            <form
-                onSubmit={handleFormSubmit}
-            >
-                <TextField
-                fullWidth
-                placeholder="Here's a new post..."
-                value={postText}
-                onChange={handleChange}
+                  <p
+                    className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
+                  >
+                    Character Count: {characterCount}/280
+                    {error && <span className="ml-2">Something went wrong...</span>}
+                  </p>
+                  <form
+                      onSubmit={handleFormSubmit}
+                    >
+                    <TextField
+                      fullWidth
+                      placeholder="Here's a new post..."
+                      value={postText}
+                      onChange={handleChange}
 
-                />
-                 <Button 
-                 type="submit"
-                 fullWidth
-                 variant="contained"
-                 sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
-                >
-                    Post
-                </Button>
+                    />
+                    <Button 
+                      type="submit"
+                      fullWidth
+                      variant="contained"
+                      sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
+                      >
+                        Post
+                    </Button>
 
-            </form>
-            </CardContent>
-            </Card>
+                  </form>
+                </CardContent>
+              </Card>
             </Grid>
            
   );

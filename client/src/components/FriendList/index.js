@@ -23,7 +23,7 @@ const FriendList = ({ friendCount, username, friends }) => {
       </h5>
       {friends.map(friend => (
         <Button className="btn w-100 display-block mb-2" key={friend._id}>
-          <Link to={`/profile/${friend.username}`}>{friend.username}</Link>
+          <Link className="friend" to={`/profile/${friend.username}`}>{friend.username}</Link>
         </Button>
       ))}
     </Grid>

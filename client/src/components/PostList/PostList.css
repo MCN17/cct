@@ -9,8 +9,14 @@
     color: black;
 }
 
+.card-header {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
 .post-text {
     color: black;
+    text-align: center;
 }
 
 .comment-link {
@@ -27,6 +33,7 @@
 
 .postList-title {
     border-bottom: 2px solid rgb(236,236,236);
+    text-align: center;
 }
 
 

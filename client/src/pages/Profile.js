@@ -67,25 +67,32 @@ const Profile = (props) => {
     <Container component="main" maxWidth="xl">
       <CssBaseline/>
         <Box>
-        <Grid container spacing={1} sx={{justifyContent:"center", margin: 0}}>
-          <Grid item xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
-            <h2 className="profile-view">
-              {user.username}
-            </h2>
-            <h2>
-            <FriendList
-              username={user.username}
-              friendCount={user.friendCount}
-              friends={user.friends}
-                />
-                </h2>
+        <Grid container spacing={1} sx={{ mb: 5, mt: 2}}>
+          <Grid item lg={2} xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
+            <Card className="profile-view">
+              <h2 className="username-profile">
+                {user.username}
+              </h2>
+              <h2>
+              <FriendList
+                username={user.username}
+                friendCount={user.friendCount}
+                friends={user.friends}
+                  />
+              </h2>
+            </Card>
           </Grid>
-          <Grid item xs={4} sx={{}}>
-            <Card>
-              {!userParam && <PostForm />}
-              </Card>
+          <Grid className="addFriend" item xs={12}  sx={{ }}>
+            {userParam && (
+              <Button sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c", color: "white" }} onClick={handleClick}>
+                Add Friend
+              </Button>
+              )}
           </Grid>
-          <Grid item xs={6} sx={{}}>
+          </Grid>
+          <Grid container sx={{ justifyContent: "center"}}>
+          <Grid className="postForm-list-profile" item xs={12} lg={6} sx={{}}>
+          {!userParam && <PostForm />}
             <Card>
                   <PostList
                   posts={user.posts}
@@ -94,14 +101,8 @@ const Profile = (props) => {
                 </Card>
           </Grid>
 
-          <Grid item xs={12}>
-            {userParam && (
-              <Button sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }} onClick={handleClick}>
-                Add Friend
-              </Button>
-              )}
+          
           </Grid>
-        </Grid>
         </Box>
         </Container>
   );

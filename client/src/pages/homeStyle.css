@@ -39,9 +39,19 @@
 
 
 .profile-view {
-    color: white;
+    color:black;
     margin-bottom: 0 !important;
 }
+
+.username-profile {
+    border-bottom: 1px solid black;
+    text-align: center
+}
+
+
+
+
+
 
 .page-title {
     color: white;
@@ -58,10 +68,10 @@
 
 }
 
-/* .main {
-    margin: 0 !important;
-    padding: 0 !important;
-} */
+.postForm-list-profile {
+    justify-content: center;
+}
+
 
 
 
@@ -85,6 +95,10 @@
     .postListHome {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+
+    .addFriend {
+        text-align: center;
     }
 }
 

@@ -60,7 +60,7 @@ const Circuits = () => {
                         Endoz
                         </Typography>
                         <Typography sx={{padding: 1 }}variant="body2" color="text.secondary">
-                            This is Loop was founded by Bruster and takes you through the Experimental Farm before you make your way 
+                            This Loop was founded by Bruster and takes you through the Experimental Farm before you make your way 
                             to the Endoz drop! The very first time the CCT trotted through this loop Lynch miscalculated his speed going into
                             a turn and almost bailed. Luckily he lived to tell the tale!
                         </Typography>
