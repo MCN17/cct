@@ -129,7 +129,7 @@ const Home = () => {
                       </CardContent>
                     </Card>
               </Grid>
-              <Grid item xs={12} lg={6} sx={{ bgcolor: "white", margin: 5, borderRadius: "0.3rem" }}>
+              <Grid className="postListHome" item xs={12} lg={6} sx={{ bgcolor: "white", margin: 5, borderRadius: "0.3rem" }}>
                 <PostList posts={posts}/>
               </Grid>
               <Grid className="pictures" item lg={2} xs={12} sx={{ mt: 5, bgcolor: "white", padding: 1 }}>
