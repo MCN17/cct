@@ -50,7 +50,7 @@ const PostList = ({ posts, title }) => {
           <h2 className="postList-title">Recent Posts</h2>
           {posts &&
           posts.map((post, _id) => (
-            <Card className="post-list" key={post._id} sx={{ bgcolor: "rgb(255,255,255)", margin: 4, padding: 0.5, borderRadius: "0.3rem"}}>
+            <Card className="post-list" key={post._id} sx={{ bgcolor: "rgb(255,255,255)", margin: 3, padding: 0.5, borderRadius: "0.3rem"}}>
               <CardContent className="cardContentTop">
                 <p className="card-header">
                   <Link className="username"
