@@ -58,9 +58,9 @@ const PostList = ({ posts, title }) => {
                     
                   >
                     posted by{" "}
-                    </Link>
                     {post.username}{" "}
                     on {post.createdAt}
+                    </Link>
                 </p>
                 <p className="comment-count">{post.commentCount} Comments</p>
               </CardContent>

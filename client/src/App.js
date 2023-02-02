@@ -12,6 +12,7 @@ import Team from "./pages/Team";
 import NoMatch from "./pages/NoMatch";
 import Profile from "./pages/Profile";
 import SinglePost from "./pages/SinglePost";
+import LandingPage from "./pages/LandingPage";
 
 // import Components
 import NavBar from "./components/NavBar"
@@ -44,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/home" element={<Home/>}/>
+            <Route path="/landingpage" element={<LandingPage/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/team" element={<Team/>}/>
