@@ -39,7 +39,7 @@ const NavBar = (props) => {
   return (
         <div className="nav">
           <ul>
-            <li><p>Cap City Trotters</p></li>
+            <a href="/"><li><p>Cap City Trotters</p></li></a>
             <li className="secondDiv">
               {navLinks.map((page) => (
                 <Button>

@@ -32,7 +32,7 @@ const LandingPage = () => {
             <CssBaseline/>
             <Box>
                 <Grid container className="topGridLanding"  sx={{  }}>
-                    <Grid item className="introParagraphLandingPage" lg={8} xs={12} sx={{ }}>
+                    <Grid item className="introParagraphLandingPage" lg={4} xs={12} sx={{ }}>
                         <p>Explore Ottawa and Gatineau while trotting with friends.</p>
                         <Button className="getStarted" color="inherit"><a href="/signup">Get Started</a></Button>
                 </Grid>
@@ -41,8 +41,9 @@ const LandingPage = () => {
                 </Grid>
                 </Grid>
                 <Grid container id="down" className="middleContainerLandingPage">
-                    <Grid item lg={3.5} xs={12} sx={{ mr: 5, mt: 20 }}>
-                        <p className="textLeft">Enjoy the Beautiful views our circuits have to offer.</p>
+                    <Grid item lg={3.5} xs={12} sx={{ mr: 5, mt: 10 }}>
+                        <p className="textLeft">Enjoy the beautiful views our circuits have to offer.</p>
+                        <Button className="viewCircuits" color="inherit"><a href="/circuits">View Circuits</a></Button>
                     </Grid>
                     <Grid item className="imageList" lg={4} xs={12} sx={{ ml: 5 }}>
                         <ImageList>
