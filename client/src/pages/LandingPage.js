@@ -6,7 +6,8 @@ import rustyBridge from "../assets/images/rustyBridge.jpg";
 import champlainLookout1 from "../assets/images/champlainLookout1.jpg";
 import Farm from "../assets/images/Farm.jpg";
 import parliamentLocks from "../assets/images/parliamentLocks.jpg";
-
+import ruinsWave from "../assets/images/ruinsWave.jpg";
+import pinkLake from "../assets/images/pinkLake.jpg";
 
 //import material ui
 import Container from '@mui/material/Container';
@@ -18,6 +19,8 @@ import CardMedia from '@mui/material/CardMedia';
 import ImageList from '@mui/material/ImageList';
 import Button from '@mui/material/Button';
 
+import { FaAngleDown } from "react-icons/fa";
+
 // import css
 import "./homeStyle.css";
 
@@ -28,53 +31,64 @@ const LandingPage = () => {
         <Container className="landingPageMain" component="main" maxWidth="fixed">
             <CssBaseline/>
             <Box>
-                <Grid container className="topGridLanding"  sx={{ justifyContent: "space-around" }}>
-                    <Grid item className="cctLogoGridItem" lg={2.5} xs={12} sx={{ mt: 4 }}>
-                        <Card>
-                            <CardMedia className="cctLogo"
-                                sx={{ height: 350 }}
-                                image={cctLogoWhite}
-                                title="cctLogo"
+                <Grid container className="topGridLanding"  sx={{  }}>
+                    <Grid item className="introParagraphLandingPage" lg={8} xs={12} sx={{ }}>
+                        <p>Explore Ottawa and Gatineau while trotting with friends.</p>
+                        <Button className="getStarted" color="inherit"><a href="/signup">Get Started</a></Button>
+                </Grid>
+                <Grid item lg={12}>
+                    <a href="#down"><FaAngleDown className="angleDown" /></a>
+                </Grid>
+                </Grid>
+                <Grid container id="down" className="middleContainerLandingPage">
+                    <Grid item lg={3.5} xs={12} sx={{ mr: 5, mt: 20 }}>
+                        <p className="textLeft">Enjoy the Beautiful views our circuits have to offer.</p>
+                    </Grid>
+                    <Grid item className="imageList" lg={4} xs={12} sx={{ ml: 5 }}>
+                        <ImageList>
+                            <Card>
+                            <CardMedia
+                             sx={{ height: 200 }}
+                             image={rustyBridge}
+                             title="Rusty Bridge by Parkway"
                             />
                         </Card>
-                    </Grid>
-                    <Grid item className="introParagraphLandingPage" lg={6} xs={12} sx={{ ml: 2}}>
-                        <h2>Cap City Trotters</h2>
-                        <p>The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
-                        We are always looking for new members so if you want to join you can take a look at our Circuits page and signup if you like what you see!</p>
-              </Grid>
-                </Grid>
-                <Grid container className="middleContainerLandingPage" sx={{ justifyContent: "space-around" }}>
-                    <Grid item className="textLeft" lg={12} xs={12}>
-                        <h2>Choose from one of our many Cicruits</h2>
-                        <p>Many of our circuits have great lookouts along the way where you can stop and enjoy the beautiful views.</p>
-                    </Grid>
-                    <Grid item lg={3.8} xs={12} sx={{ }}>
                         <Card>
                             <CardMedia
-                             sx={{ height: 300 }}
+                             sx={{ height: 200 }}
+                             image={parliamentLocks}
+                             title="Parliament Locks"
+                            />
+                        </Card>
+                        <Card>
+                            <CardMedia
+                             sx={{ height: 200 }}
                              image={champlainLookout1}
                              title="Champlain Lookout"
                             />
                         </Card>
-                        </Grid>
-                        <Grid item lg={3.8} xs={12} sx={{ }}>
                         <Card>
                             <CardMedia
-                             sx={{ height: 300 }}
-                             image={rustyBridge}
-                             title="Champlain Lookout"
-                            />
-                        </Card>
-                        </Grid>
-                        <Grid item lg={3.8} xs={12} sx={{ }}>
-                        <Card>
-                            <CardMedia
-                             sx={{ height: 300 }}
+                             sx={{ height: 200 }}
                              image={Farm}
-                             title="Champlain Lookout"
+                             title="Experimental Farm"
                             />
                         </Card>
+                        <Card>
+                            <CardMedia
+                             sx={{ height: 200 }}
+                             image={ruinsWave}
+                             title="Ruins Wave"
+                            />
+                        </Card>
+                        <Card>
+                            <CardMedia
+                             sx={{ height: 200 }}
+                             image={pinkLake}
+                             title="Pink Lake Lookout"
+                            />
+                        </Card>
+                        </ImageList>
                         </Grid>
                     </Grid>
             </Box>
@@ -83,3 +97,6 @@ const LandingPage = () => {
 }
 
 export default LandingPage;
+
+                 
+                 

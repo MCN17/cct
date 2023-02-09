@@ -97,21 +97,6 @@ const Home = () => {
     return (
         <Container className="main" component="main" maxWidth="fixed">
           <Box sx={{ mt: 2 }}>
-            <Grid className="topGrid-container" container  sx={{ justifyContent: "center" }}>
-              <Grid item lg={2.2} xs={12}>
-                <Card>
-                  <CardMedia className="cctLogoLarge"
-                          sx={{ height: 310 }}
-                          image={cctlogo1}
-                          title="cctLogo"
-                      />
-                </Card>
-              </Grid>
-              <Grid item className="introParagraph" lg={6} xs={12} sx={{ ml: 2}}>
-              <p>Welcome to Cap City Trotters! The CCT was created in 2019 by KMAC, Lynch, Bruster, and Damarts. Our Routes include several loops in both Ottawa and Gatineau.
-                We are always looking for new members so if you want to join you can take a look at our Circuits page and signup if you like what you see!</p>
-              </Grid>
-            </Grid>
             <Grid className="middleGrid-container" container sx={{ justifyContent: "center"}}>
               <Grid className="pictures" item lg={3} xs={12} sx={{ mt: 5 }}>
                     <Card>
@@ -132,7 +117,7 @@ const Home = () => {
               <Grid className="postListHome" item xs={12} lg={6} sx={{ bgcolor: "hsl(0,0%,97%, 1)", margin: 5, borderRadius: "0.3rem" }}>
                 <PostList posts={posts}/>
               </Grid>
-              <Grid className="pictures" item lg={2} xs={12} sx={{ mt: 5, bgcolor: "white", padding: 1 }}>
+              {/* <Grid className="pictures" item lg={2} xs={12} sx={{ mt: 5, bgcolor: "white", padding: 1 }}>
                 <Stack spacing={1}>
                   <Card>
                     <CardMedia className="rustyBridgePic"
@@ -191,7 +176,7 @@ const Home = () => {
                         />
                   </Card>
                 </Stack>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Box>
         </Container>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Auth from "../../utils/auth"
 
 // import material ui components
@@ -21,16 +21,15 @@ import "./NavBar.css"
 
 
 
-const NavBar = () => {
+const NavBar = (props) => {
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
+  const {
+    navLinks = [], 
+    setCurrentPage, 
+    currentPage
+  } = props
+
+
 
     const logout = event => {
       event.preventDefault();
@@ -38,44 +37,32 @@ const NavBar = () => {
     }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar className="nav">
-
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              'aria-labelledby': 'basic-button',
-            }}
-          >
-            <MenuItem onClick={handleClose}><Link to="/home" className="menu-links">Home</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/profile" className="menu-links">Profile</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/team" className="menu-links">The Team</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/circuits" className="menu-links">Circuits</Link></MenuItem>
-          </Menu>
-        
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            id="basic-button"
-            aria-controls={open ? 'basic-menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
-          >
-          <MenuIcon />
-          </IconButton>
-          <Typography className="title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <div className="nav">
+          <ul>
+            <li><p>Cap City Trotters</p></li>
+            <li className="secondDiv">
+              {navLinks.map((page) => (
+                <Button>
+                <a 
+                className={`${
+                  currentPage.name === page.name && "navActive"
+                }`}
+                key={page.name}
+                href={page.href}
+                >
+                <span
+                onClick={() => {
+                  setCurrentPage(page)
+                }}
+                >
+                  {page.name}
+                </span>
+                </a>
+                </Button>
+              ))}
+            </li>
             
-          </Typography>
-
-
+            <li className="thirdDiv">
           {Auth.loggedIn() ? ( 
             <>
               <Button className="signup" color="inherit"><a href="/profile">Profile</a></Button>
@@ -84,13 +71,12 @@ const NavBar = () => {
           ) : (
             <>
               <Button className="signup" color="inherit"><a href="/signup">Signup</a></Button>
-              <Button color="inherit"><a href="/login">Login</a></Button>
+              <Button className="signup" color="inherit"><a href="/login">Login</a></Button>
             </>
           )}
-        
-        </Toolbar>
-      </AppBar>
-    </Box>
+          </li>
+        </ul>
+        </div>
   );
 }
 

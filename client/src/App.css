@@ -1,5 +1,11 @@
 .App {
-  background-color: #1f2937;
+  background-color: hsl(113,9%,18%);
+  min-height: 100vh;
+  width: auto;
+}
+
+.App1 {
+  background-color: hsl(113,9%,18%);
   min-height: 100vh;
   width: auto;
 }
