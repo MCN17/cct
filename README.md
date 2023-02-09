@@ -16,7 +16,7 @@ Cap City Trotters is a social media web appllication where members of the bike g
 ## Website
 https://damp-reef-37984.herokuapp.com/
 
-![image](https://user-images.githubusercontent.com/104735194/212155902-1f815f79-532d-4a96-a2b6-12e5fcaa3959.png)
+![image](https://user-images.githubusercontent.com/104735194/217958585-1bdf9611-ce41-4a2b-9e71-4f467a4e6c0f.png)
 
 ## Credits
 This application was built by Marty Nolan.
