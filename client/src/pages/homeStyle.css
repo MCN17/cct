@@ -72,6 +72,27 @@ h2 {
     margin-bottom: 0 !important;
 }
 
+.usernameSinglePost {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.dateSinglePost {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.textSinglePost {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bottomDivSignlePost {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
 .viewCircuits a {
     padding: 5px;
     font-size: 1rem;

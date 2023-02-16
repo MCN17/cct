@@ -88,7 +88,7 @@ const handleFormSubmit = async event => {
             borderRadius: "3%"
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: '#b71c1c' }}>
+          <Avatar sx={{ m: 1, bgcolor: "hsl(210,79%,46%)" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
@@ -126,7 +126,7 @@ const handleFormSubmit = async event => {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
+              sx={{ mt: 3, mb: 2, bgcolor: "hsl(210,79%,46%)" }}
             >
               Sign In
             </Button>

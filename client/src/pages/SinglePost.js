@@ -30,17 +30,19 @@ const SinglePost = (props) => {
   return (
     <Container>
         <Grid>
-            {post.postText} from {post.username}
-            
-            <p>post on {post.createdAt}</p>
+          <p className="usernameSinglePost">{post.username}</p>
+          <p className="dateSinglePost">{post.createdAt}</p>
+          <p className="textSinglePost">{post.postText}</p>
         </Grid>
-        <Grid sx={{ mb: 2 }}>
+        <Grid className="bottomDivSignlePost" container>
+        <Grid item sx={{ mb: 2 }}>
             {Auth.loggedIn() && <CommentForm postId={post._id} />}
         </Grid>
-        <Grid sx={{}}>
+        <Grid item lg={6.7} sx={{}}>
             {post.commentCount > 0 && (
             <CommentList comments={post.comments} />
             )}
+        </Grid>
         </Grid>
     </Container>
   );

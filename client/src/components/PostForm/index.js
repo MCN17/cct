@@ -78,8 +78,9 @@ const PostForm = () => {
                     className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
                   >
                     Character Count: {characterCount}/280
-                    {error && <span className="ml-2">Something went wrong...</span>}
+                    {error && <span className="ml-2"></span>}
                   </p>
+                  <p>This site is experiencing difficulties. If you do not see the post you just created you can refresh this page or go to the home page to view it.</p>
                   <form
                       onSubmit={handleFormSubmit}
                     >
@@ -94,7 +95,7 @@ const PostForm = () => {
                       type="submit"
                       fullWidth
                       variant="contained"
-                      sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
+                      sx={{ mt: 3, mb: 2, bgcolor: "hsl(210,79%,46%)" }}
                       >
                         Post
                     </Button>

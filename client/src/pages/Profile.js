@@ -68,7 +68,7 @@ const Profile = (props) => {
       <CssBaseline/>
         <Box>
         <Grid container spacing={1} sx={{ mb: 5, mt: 2}}>
-          <Grid item lg={2} xs={12} sx={{ml: 1, justifyContent: "space-between" }}>
+          <Grid item lg={2} xs={12} sx={{ }}>
             <Card className="profile-view">
               <h2 className="username-profile">
                 {user.username}
@@ -84,7 +84,7 @@ const Profile = (props) => {
           </Grid>
           <Grid className="addFriend" item xs={12}  sx={{ }}>
             {userParam && (
-              <Button sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c", color: "white" }} onClick={handleClick}>
+              <Button sx={{ mt: 3, mb: 2, bgcolor: "hsl(210,79%,46%)", color: "white" }} onClick={handleClick}>
                 Add Friend
               </Button>
               )}

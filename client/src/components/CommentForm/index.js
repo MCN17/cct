@@ -66,7 +66,7 @@ const CommentForm = ({ postId }) => {
                     type="submit"
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 3, mb: 2, bgcolor: "#b71c1c" }}
+                    sx={{ mt: 3, mb: 2, bgcolor: "hsl(210,79%,46%)" }}
                 >
                     Comment
                 </Button>
