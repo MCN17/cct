@@ -1,7 +1,7 @@
 # Cap City Trotters
 
 ## Description
-Cap City Trotters is a social media web appllication where members of the bike group can post about previous or upcoming rides. Once you have created an account, you are also able to add friends and comment on each other's posts.
+Cap City Trotters is a social media web application where members of the bike group can post about previous or upcoming rides. Once you have created an account, you are also able to add friends and comment on each other's posts.
 
 ## Build With
 * JavaScript
