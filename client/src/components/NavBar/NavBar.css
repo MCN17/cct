@@ -71,3 +71,22 @@ a:visited {
     text-decoration: none;
 }
 
+@media screen and (max-width: 575px) {
+
+    .nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .secondDiv {
+        margin-right: 0px;
+    }
+    
+    .secondDiv a {
+        font-size: 1rem;
+        display: inline;
+        justify-items: center;
+        margin: 3px 0;
+    }
+}
+
