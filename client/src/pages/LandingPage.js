@@ -41,7 +41,7 @@ const LandingPage = () => {
                 </Grid>
                 </Grid>
                 <Grid container id="down" className="middleContainerLandingPage">
-                    <Grid item lg={3.5} xs={12} sx={{ mr: 5, mt: 10 }}>
+                    <Grid item className="middleContainer" lg={3.5} xs={12} sx={{ mr: 5, mt: 10 }}>
                         <p className="textLeft">Enjoy the beautiful views our circuits have to offer.</p>
                         <Button className="viewCircuits" color="inherit"><a href="/circuits">View Circuits</a></Button>
                     </Grid>
