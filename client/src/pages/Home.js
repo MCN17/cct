@@ -17,7 +17,7 @@ import PostList from '../components/PostList';
 import { QUERY_POSTS, QUERY_ME_BASIC } from '../utils/queries';
 import Auth from '../utils/auth';
 // import FriendList from '../components/FriendList';
-// import PostForm from '../components/PostForm';
+import PostForm from '../components/PostForm';
 
 // import .env file
 // require('dotenv').config()
@@ -97,8 +97,10 @@ const Home = () => {
     return (
         <Container className="main" component="main" maxWidth="fixed">
           <Box sx={{ mt: 2 }}>
+            
             <Grid className="middleGrid-container" container sx={{ justifyContent: "center"}}>
               <Grid className="pictures" item lg={3} xs={12} sx={{ mt: 5 }}>
+                    <PostForm />
                     <Card>
                       <CardContent sx={{ margin: 2, fontWeight: "bold", fontSize: 20 }}>
                          Membership Notice

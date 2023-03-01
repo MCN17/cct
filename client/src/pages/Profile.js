@@ -20,7 +20,7 @@ import PostList from '../components/PostList';
 import FriendList from '../components/FriendList';
 
 import { useQuery, useMutation } from '@apollo/client';
-import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import { QUERY_USER, QUERY_ME, QUERY_POSTS } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';
 
@@ -28,11 +28,17 @@ const Profile = (props) => {
   const { username: userParam } = useParams();
 
   const [addFriend] = useMutation(ADD_FRIEND);
-  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, QUERY_POSTS, {
     variables: { username: userParam },
   });
 
   const user = data?.me || data?.user || {};
+
+  
+  const { userPosts } = useQuery(QUERY_POSTS);
+
+  const posts = userPosts?.posts || [];
+  console.log(posts);
 
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {

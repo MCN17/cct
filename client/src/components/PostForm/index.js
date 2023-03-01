@@ -80,7 +80,6 @@ const PostForm = () => {
                     Character Count: {characterCount}/280
                     {error && <span className="ml-2"></span>}
                   </p>
-                  <p>This site is experiencing difficulties. If you do not see the post you just created you can refresh this page or go to the home page to view it.</p>
                   <form
                       onSubmit={handleFormSubmit}
                     >
