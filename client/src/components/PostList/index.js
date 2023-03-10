@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 //import material ui
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-// import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -16,27 +15,10 @@ import IconButton from '@mui/material/IconButton';
 //import Font Awesome icons
 import { FaRegComment } from "react-icons/fa";
 
-// import CommentForm from '../../components/CommentForm';
-// import CommentList from '../../components/CommentList';
-
 // import PostList css
 import "./PostList.css"
 
-// const ExpandMore = styled((props) => {
-//   const { expand, ...other } = props;
-//   return <IconButton {...other} />;
-// })(({ theme, expand }) => ({
-//   marginLeft: 'auto',
-//   transition: theme.transitions.create('transform', {
-//     duration: theme.transitions.duration.shortest,
-//   }),
-// }));
-
 const PostList = ({ posts, title }) => {
-
-  // const [expanded, setExpanded] = React.useState(-1);
-
- 
 
   if (!posts.length) {
     return <h3>No Posts Yet</h3>;

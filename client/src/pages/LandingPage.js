@@ -1,7 +1,6 @@
 import React from 'react';
 
 // import pictures
-import cctLogoWhite from "../assets/images/cctLogoWhite.jpg";
 import rustyBridge from "../assets/images/rustyBridge.jpg";
 import champlainLookout1 from "../assets/images/champlainLookout1.jpg";
 import Farm from "../assets/images/Farm.jpg";
@@ -90,6 +89,11 @@ const LandingPage = () => {
                             />
                         </Card>
                         </ImageList>
+                        </Grid>
+                    </Grid>
+                    <Grid container className="footer">
+                        <Grid item>
+                            <p>&#169; 2023 Cap City Trotters</p>
                         </Grid>
                     </Grid>
             </Box>

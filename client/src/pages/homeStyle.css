@@ -109,6 +109,12 @@ h2 {
     margin-top: 10rem !important;
 }
 
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
 
 
 /* fit-content isnt supported by sarfari and some other browsers so I need to figure something out for that! */
@@ -189,14 +195,26 @@ h2 {
     .middleContainerLandingPage {
         text-align: center;
         margin: 0rem 0rem !important;
+        height: 65vh;
     }
+
+    .footer {
+        height: 22vh;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+
 
     .textLeft p {
         margin: 0rem 0rem;
     }
 
     .imageList {
-        visibility: hidden;
+        position: absolute;
     }
 
     .middleContainer {

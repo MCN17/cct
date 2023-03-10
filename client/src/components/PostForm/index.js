@@ -5,16 +5,12 @@ import { ADD_POST } from '../../utils/mutations';
 import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
 
 // import material ui
-// import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-// import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CssBaseline from '@mui/material/CssBaseline';
-// import CssBaseline from '@mui/material/CssBaseline';
 
 const PostForm = () => {
   const [postText, setText] = useState('');
