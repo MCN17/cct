@@ -43,7 +43,7 @@ const Circuits = () => {
                         </Typography>
                         <Typography sx={{padding: 1 }}variant="body2" color="text.secondary">
                             This is the most popular CCT route. Depending on the weather and time of day you may come up the hill
-                            to see the Lord's Eye shining his light upon you!
+                            to see the Lord's Eye shining his light upon you!!
                         </Typography>
                     </CardContent>
                 </Card>
